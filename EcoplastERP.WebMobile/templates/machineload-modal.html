@@ -1,0 +1,92 @@
+﻿<ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-perfect">
+        <h1 class="title">Detay</h1>
+        <button class="button button-clear button-primary" ng-click="modal.hide()">Kapat</button>
+    </ion-header-bar>
+    <ion-content padding="true">
+        <ion-list>
+            <ion-item class="item-text-wrap">
+                <div class="row"><b>US: %{{ detail.US | number:0 }}</b><progress id="US" max="100" value="{{ detail.US }}" style="width: 75%; margin-top: 3px;"></progress></div>
+                <div class="row"><b>SS: %{{ detail.SS | number:0 }}</b><progress id="SS" max="100" value="{{ detail.SS }}" style="width: 75%; margin-top: 3px;"></progress></div>
+                <h2><b>{{ detail.SequenceNumber }} - {{  detail.WorkName }}</b></h2>
+                <p><b>{{ detail.ContactName }}</b></p>
+                <div class="row">
+                    <div class="col-20">İş Emri Tar.:</div>
+                    <div class="col-80">{{ detail.WorkOrderDate | dateFilter | date:'dd.MM.yyyy' }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-20">İşin Adı:</div>
+                    <div class="col-80">{{ detail.WorkName }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-20">Sip.No:</div>
+                    <div class="col-80">{{ detail.OrderNumber }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-20">Sip.Tar.:</div>
+                    <div class="col-80">{{ detail.OrderDate | dateFilter | date:'dd.MM.yyyy' }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-20">Termin:</div>
+                    <div class="col-80">{{ detail.LineDeliveryDate | dateFilter | date:'dd.MM.yyyy' }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-20">En:</div>
+                    <div class="col-80">{{ detail.Width }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-20">Boy:</div>
+                    <div class="col-80">{{ detail.Height }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-20">Mikron:</div>
+                    <div class="col-80">{{ detail.Thickness }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-20">Uzunluk:</div>
+                    <div class="col-80">{{ detail.Lenght }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Sip.Mik.:</div>
+                    <div class="col-25 text-right">{{ detail.OrderedQuantity | number:2 }}</div>
+                    <div class="col-34"></div>
+                </div>
+                <div class="row">
+                    <div class="col-40">İş Emri Mik.:</div>
+                    <div class="col-25 text-right">{{ detail.WorkOrderQuantity | number:2 }}</div>
+                    <div class="col-34"></div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Kaynak Mik.:</div>
+                    <div class="col-25 text-right">{{ detail.StoreQuantity | number:2 }}</div>
+                    <div class="col-34"></div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Üret.Mik.:</div>
+                    <div class="col-25 text-right">{{ detail.ProductionQuantity | number:2 }}</div>
+                    <div class="col-34"></div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Kalan Üret.Mik.:</div>
+                    <div class="col-25 text-right">{{ detail.RemainingProductionQuantity | number:2 }}</div>
+                    <div class="col-34"></div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Fire Mik.:</div>
+                    <div class="col-25 text-right">{{ detail.WastageQuantity | number:2 }}</div>
+                    <div class="col-34"></div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Sip.Üret.Mik.:</div>
+                    <div class="col-25 text-right">{{ detail.SalesOrderQuantity | number:2 }}</div>
+                    <div class="col-34"></div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Kalan Süre (saat):</div>
+                    <div class="col-25 text-right">{{ detail.RemainingTime | number:2 }}</div>
+                    <div class="col-34"></div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-modal-view>

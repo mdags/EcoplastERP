@@ -1,0 +1,820 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="About Info" Caption="Hakkında..." />
+      <Action Id="AddFromFile" Caption="Dosyadan Ekle..." ToolTip="Ekli seçilen dosya ile yeni bir kayıt oluştur" />
+      <Action Id="BindAnalysisData" Caption="Analiz Verisini Bağla" />
+      <Action Id="CancelAction" Caption="Vazgeç" />
+      <Action Id="ChartWizard" Caption="Grafik Sihirbazı" />
+      <Action Id="ChooseSkin" Caption="Tema Seç">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Flat" Caption="Flat" />
+          <ChoiceActionItem Id="Office2003" Caption="Office2003" />
+          <ChoiceActionItem Id="Skins" Caption="Skins">
+            <ChoiceActionItems>
+              <ChoiceActionItem Id="Black" Caption="Black" />
+              <ChoiceActionItem Id="Blue" Caption="Blue" />
+              <ChoiceActionItem Id="Blueprint" Caption="Blueprint" />
+              <ChoiceActionItem Id="Caramel" Caption="Caramel" />
+              <ChoiceActionItem Id="Coffee" Caption="Coffee" />
+              <ChoiceActionItem Id="Dark Side" Caption="Dark Side" />
+              <ChoiceActionItem Id="Darkroom" Caption="Darkroom" />
+              <ChoiceActionItem Id="DevExpress Dark Style" Caption="DevExpress Dark Style" />
+              <ChoiceActionItem Id="DevExpress Style" Caption="DevExpress Style" />
+              <ChoiceActionItem Id="Foggy" Caption="Foggy" />
+              <ChoiceActionItem Id="Glass Oceans" Caption="Glass Oceans" />
+              <ChoiceActionItem Id="High Contrast" Caption="High Contrast" />
+              <ChoiceActionItem Id="iMaginary" Caption="iMaginary" />
+              <ChoiceActionItem Id="Lilian" Caption="Lilian" />
+              <ChoiceActionItem Id="Liquid Sky" Caption="Liquid Sky" />
+              <ChoiceActionItem Id="London Liquid Sky" Caption="London Liquid Sky" />
+              <ChoiceActionItem Id="McSkin" Caption="McSkin" />
+              <ChoiceActionItem Id="Metropolis" Caption="Metropolis" />
+              <ChoiceActionItem Id="Metropolis Dark" Caption="Metropolis Dark" />
+              <ChoiceActionItem Id="Money Twins" Caption="Money Twins" />
+              <ChoiceActionItem Id="Office 2007 Black" Caption="Office 2007 Black" />
+              <ChoiceActionItem Id="Office 2007 Blue" Caption="Office 2007 Blue" />
+              <ChoiceActionItem Id="Office 2007 Green" Caption="Office 2007 Green" />
+              <ChoiceActionItem Id="Office 2007 Pink" Caption="Office 2007 Pink" />
+              <ChoiceActionItem Id="Office 2007 Silver" Caption="Office 2007 Silver" />
+              <ChoiceActionItem Id="Office 2010 Black" Caption="Office 2010 Black" />
+              <ChoiceActionItem Id="Office 2010 Blue" Caption="Office 2010 Blue" />
+              <ChoiceActionItem Id="Office 2010 Silver" Caption="Office 2010 Silver" />
+              <ChoiceActionItem Id="Office 2013" Caption="Office 2013" />
+              <ChoiceActionItem Id="Office 2013 Dark Gray" Caption="Office 2013 Dark Gray" />
+              <ChoiceActionItem Id="Office 2013 Light Gray" Caption="Office 2013 Light Gray" />
+              <ChoiceActionItem Id="Office 2016 Colorful" Caption="Office 2016 Colorful" />
+              <ChoiceActionItem Id="Office 2016 Dark" Caption="Office 2016 Dark" />
+              <ChoiceActionItem Id="Pumpkin" Caption="Pumpkin" />
+              <ChoiceActionItem Id="Seven" Caption="Seven" />
+              <ChoiceActionItem Id="Seven Classic" Caption="Seven Classic" />
+              <ChoiceActionItem Id="Sharp" Caption="Sharp" />
+              <ChoiceActionItem Id="Sharp Plus" Caption="Sharp Plus" />
+              <ChoiceActionItem Id="Springtime" Caption="Springtime" />
+              <ChoiceActionItem Id="Stardust" Caption="Stardust" />
+              <ChoiceActionItem Id="Summer 2008" Caption="Summer 2008" />
+              <ChoiceActionItem Id="The Asphalt World" Caption="The Asphalt World" />
+              <ChoiceActionItem Id="Valentine" Caption="Valentine" />
+              <ChoiceActionItem Id="Visual Studio 2013 Blue" Caption="Visual Studio 2013 Blue" />
+              <ChoiceActionItem Id="Visual Studio 2013 Dark" Caption="Visual Studio 2013 Dark" />
+              <ChoiceActionItem Id="Visual Studio 2013 Light" Caption="Visual Studio 2013 Light" />
+              <ChoiceActionItem Id="VS2010" Caption="VS2010" />
+              <ChoiceActionItem Id="Whiteprint" Caption="Whiteprint" />
+              <ChoiceActionItem Id="Xmas 2008 Blue" Caption="Xmas 2008 Blue" />
+            </ChoiceActionItems>
+          </ChoiceActionItem>
+          <ChoiceActionItem Id="Style3D" Caption="Style3D" />
+          <ChoiceActionItem Id="UltraFlat" Caption="UltraFlat" />
+          <ChoiceActionItem Id="Windows Theme" Caption="Windows Theme" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="ClearKpiCache" Caption="KPI Önbellek Temizle" />
+      <Action Id="Close" Caption="Kapat" />
+      <Action Id="CopyCellValue" Caption="Hücre Değerini Kopyala" />
+      <Action Id="Diagnostic Info.EasyTest Control" Caption="Diagnostic Info.EasyTest Control">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="EasyTest Control" Caption="EasyTest Control" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="EditModel" Caption="Modeli Düzenle" />
+      <Action Id="EditReportControllerV2.Edit" Caption="Düzenle" />
+      <Action Id="ExecuteReportV2" Caption="Raporu Yürüt" />
+      <Action Id="Exit" Caption="Çıkış" />
+      <Action Id="Export" Caption="Aktar" />
+      <Action Id="ExportAnalysis" Caption="Analiz İçin Aktar" />
+      <Action Id="MergeAction" Caption="Birleştir" />
+      <Action Id="Open" Caption="Aç..." ToolTip="Bir dış uygulama ile ekli dosyayı aç" />
+      <Action Id="OpenObject" Caption="İlşkili Nesneyi Aç" ToolTip="(SHIFT+CTRL+Sol Click) Odaklı başvuru özellik düzenleyici ile ilişkili kaydı açın" />
+      <Action Id="PageSetup" Caption="Sayfa Yapısı..." ToolTip="Sayfa Yapısı" />
+      <Action Id="Print" Caption="Yazdır..." ToolTip="Yazdırma İletişimi" />
+      <Action Id="PrintChart" Caption="Grafiği Yazdır" />
+      <Action Id="PrintPreview" Caption="Baskı Önizleme..." ToolTip="Baskı Önizleme" />
+      <Action Id="PrintPreviewPivotGrid" Caption="Pivotu Yazdır" />
+      <Action Id="RefreshAction" Caption="Yenile" />
+      <Action Id="RefreshKpi" Caption="KPI Yenile" />
+      <Action Id="SaveTo" Caption="Farklı Kaydet..." ToolTip="Seçili kayıtlar için ekli dosyaları kaydet" />
+      <Action Id="ShowChart" Caption="Grafiği Göster" />
+      <Action Id="ShowNotificationsAction" Caption="Bildirimler Gösterme Eylemi" />
+      <Action Id="ShowReportDesignerV2" Caption="Rapor Tasarımcısı Göster" />
+      <Action Id="ShowToolbar" Caption="Araç Çubuğunu Göster" />
+      <Action Id="UnbindAnalysisData" Caption="Analiz Veri Bağlantısı Kaldır" />
+    </Actions>
+    <DisableReasons>
+      <Reason Id="AttachmentAssigned" Caption="Ek(ler) boş" />
+    </DisableReasons>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Kpi.BaseKpiObject" Caption="Ana Kpi Nesnesi">
+      <OwnMembers>
+        <Member Name="Oid" Caption="Oid" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Kpi.IDateRange" Caption="Tarih Aralığı">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Başlık" />
+        <Member Name="EndPoint" Caption="Bitiş Noktası" />
+        <Member Name="Name" Caption="Adı" />
+        <Member Name="StartPoint" Caption="Başlangıç Noktası" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem" Caption="KPI">
+      <OwnMembers>
+        <Member Name="ActionsToolbarVisibility" Caption="Eylemler Araç Çubuğu Görünürlüğü" />
+        <Member Name="Kpi" Caption="Kpi" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Kpi.KpiDefinition" Caption="Tanım">
+      <OwnMembers>
+        <Member Name="Active" Caption="Etkin" />
+        <Member Name="Compare" Caption="Karşılaştır" />
+        <Member Name="Criteria" Caption="Kriter" />
+        <Member Name="Current" Caption="Geçerli" />
+        <Member Name="Direction" Caption="Yön" />
+        <Member Name="Expression" Caption="İfade" />
+        <Member Name="GreenZone" Caption="Yeşil Bölge" />
+        <Member Name="MeasurementFrequency" Caption="Ölçüm Frekansı" />
+        <Member Name="Name" Caption="Adı" />
+        <Member Name="Objects" Caption="Nesneler" />
+        <Member Name="Period" Caption="Periyod" />
+        <Member Name="Range" Caption="Aralık" />
+        <Member Name="RangeToCompare" Caption="Karşılaştırma Aralığı" />
+        <Member Name="RedZone" Caption="Kırmızı Bölge" />
+        <Member Name="SuppressedSeries" Caption="Bastırılımş Seriler" />
+        <Member Name="TargetObjectType" Caption="Hedef Nesne Türü" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Kpi.KpiHistoryItem" Caption="Kpi Geçiş Öğesi">
+      <OwnMembers>
+        <Member Name="RangeEnd" Caption="Aralık Bitişi" />
+        <Member Name="RangeStart" Caption="Aralık Başlangıcı" />
+        <Member Name="Value" Caption="Değer" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Kpi.KpiInstance" Caption="KPI">
+      <OwnMembers>
+        <Member Name="Change" Caption="Değiştir" DisplayFormat="{0:#0.00%}" />
+        <Member Name="ChartDataSource" Caption="Grafik Veri Kaynağı" />
+        <Member Name="Current" Caption="Geçerli" />
+        <Member Name="GaugeDataSource" Caption="Gösterge Veri Kaynağı" />
+        <Member Name="HistoryItems" Caption="Heçmiş Öğeler" />
+        <Member Name="KpiName" Caption="Adı" />
+        <Member Name="Period" Caption="Periyod" />
+        <Member Name="Previous" Caption="Öncekiler" />
+        <Member Name="Scorecards" Caption="Karneler" />
+        <Member Name="Sparkline" Caption="Sparkline" />
+        <Member Name="Trend" Caption="Trend" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Kpi.KpiScorecard" Caption="Karne">
+      <OwnMembers>
+        <Member Name="Indicators" Caption="Göstergeler" />
+        <Member Name="Name" Caption="Adı" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.PermissionMatrix.TypePermissionMatrixItem" Caption="İzin Matriks Öğesini Girin">
+      <OwnMembers>
+        <Member Name="AllowCreate" Caption="Oluştur" />
+        <Member Name="AllowDelete" Caption="Sil" />
+        <Member Name="AllowNavigate" Caption="Gezin" />
+        <Member Name="AllowRead" Caption="Oku" />
+        <Member Name="AllowWrite" Caption="Yaz" />
+        <Member Name="Category" Caption="Kategori" />
+        <Member Name="Id" Caption="Id" />
+        <Member Name="MemberPermissions" Caption="Üye İzinleri" />
+        <Member Name="Object" Caption="Nesne" />
+        <Member Name="ObjectPermissions" Caption="Nesne İzinleri" />
+        <Member Name="TargetType" Caption="Hedef Türü" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemMemberPermissionsObject" Caption="Üye İşlem İzinleri">
+      <OwnMembers>
+        <Member Name="AllowRead" Caption="Okuma İzni Ver" />
+        <Member Name="AllowWrite" Caption="Yazma İzni Ver" />
+        <Member Name="Criteria" Caption="Kriter" />
+        <Member Name="EffectiveRead" Caption="Oku" />
+        <Member Name="EffectiveWrite" Caption="Yaz" />
+        <Member Name="InheritedFrom" Caption="Kalıtsal" />
+        <Member Name="Members" Caption="Üyeler" />
+        <Member Name="Oid" Caption="Oid" />
+        <Member Name="Owner" Caption="Sahip" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemObjectPermissionsObject" Caption="Nesne İşlem İzni">
+      <OwnMembers>
+        <Member Name="AllowDelete" Caption="Silme İzni Ver" />
+        <Member Name="AllowNavigate" Caption="Gezinme İzni Ver" />
+        <Member Name="AllowRead" Caption="Okuma İzni Ver" />
+        <Member Name="AllowWrite" Caption="Yazma İzni Ver" />
+        <Member Name="Criteria" Caption="Kriter" />
+        <Member Name="EffectiveDelete" Caption="Sil" />
+        <Member Name="EffectiveNavigate" Caption="Gezin" />
+        <Member Name="EffectiveRead" Caption="Oku" />
+        <Member Name="EffectiveWrite" Caption="Yaz" />
+        <Member Name="InheritedFrom" Caption="Kalıtsal" />
+        <Member Name="Oid" Caption="Oid" />
+        <Member Name="Owner" Caption="Sahip" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole" Caption="Rol">
+      <OwnMembers>
+        <Member Name="ChildRoles" Caption="Çocuk Roller" />
+        <Member Name="ParentRoles" Caption="Ana Roller" />
+        <Member Name="Users" Caption="Kullanıcılar" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase" Caption="Ana Rol">
+      <OwnMembers>
+        <Member Name="CanEditModel" Caption="Modeli Düzenleyebilir" />
+        <Member Name="IsAdministrative" Caption="Admin mi?" />
+        <Member Name="Name" Caption="Adı" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemTypePermissionObject" Caption="İşlem İzinlerini Girin">
+      <OwnMembers>
+        <Member Name="Owner" Caption="Sahip" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemTypePermissionsObjectBase" Caption="Ana İşlem İzinlerini Girin">
+      <OwnMembers>
+        <Member Name="AllowCreate" Caption="Oluştur" />
+        <Member Name="AllowDelete" Caption="Sil" />
+        <Member Name="AllowNavigate" Caption="Gezin" />
+        <Member Name="AllowRead" Caption="Oku" />
+        <Member Name="AllowWrite" Caption="Yaz" />
+        <Member Name="MemberPermissions" Caption="Üye İzinleri" />
+        <Member Name="Object" Caption="Nesne" />
+        <Member Name="ObjectPermissions" Caption="Nesne İzinleri" />
+        <Member Name="Oid" Caption="Oid" />
+        <Member Name="TargetType" Caption="Hedef Türü" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemTypePermissionsObjectOwner" Caption="İşlem İzinleri Sahibini Girin">
+      <OwnMembers>
+        <Member Name="Oid" Caption="Oid" />
+        <Member Name="TypePermissionMatrix" Caption="Veri Erişim İzni" />
+        <Member Name="TypePermissions" Caption="İzinleri Girin" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemUser" Caption="Kullanıcı">
+      <OwnMembers>
+        <Member Name="Roles" Caption="Roller" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase" Caption="Güvenlik Sistemi Kullanıcısı">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="İlk Oturumda Parolayı Değiştir" />
+        <Member Name="IsActive" Caption="Etkin mi?" />
+        <Member Name="Oid" Caption="Oid" />
+        <Member Name="UserName" Caption="Kullanıcı Adı" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItem">
+      <OwnMembers>
+        <Member Name="ValidationOutcome" Caption="Doğrulama Sonuçları" />
+      </OwnMembers>
+    </Class>
+    <Class Name="EcoplastERP.Module.Win.Editors.ViewVariantParameterObject" Caption="Düzen Parametre Nesnesi">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Başlık" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="AllFiles" Value="Tüm Dosyalar" />
+      <LocalizationItem Name="ExportLayout" Value="Düzeni dosyaya ver..." />
+      <LocalizationItem Name="FilterBuilder" Value="Filtre Düzenleyici" />
+      <LocalizationItem Name="ImportLayout" Value="Düzeni dosyadan ekle..." />
+      <LocalizationItem Name="ReportDesignerError" Value="Hata" />
+      <LocalizationItem Name="ReportDesignerWarning" Value="Uyarı" />
+      <LocalizationItem Name="ReportFiles" Value="Rapor Dosyaları" />
+      <LocalizationItem Name="SchedulerResourceDeletingWarning" Value="Uyarı" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Confirmations">
+      <LocalizationItem Name="Cancel" Value="Değişiklikleri iptal etmek istiyor musunuz?" />
+      <LocalizationItem Name="ConfirmForcedCloseWindow" Value="Bu pencereyi kapatmak hataya neden olur. Yinede kapatmak istiyor musunuz?\r\nUyarı: Eğer 'Evet'i seçerseniz tüm değişiklikler kaybolacaktır." />
+      <LocalizationItem Name="Save" Value="Değişiklikleri kaydetmek istiyor musunuz?" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Controls">
+      <LocalizationGroup Name="DevExpress.Printing">
+        <LocalizationItem Name="Msg_OpenFileQuestionCaption" Value="Dışa Ver" />
+        <LocalizationItem Name="RibbonPreview_Customize_Caption" Value="Seçenekler" />
+        <LocalizationItem Name="RibbonPreview_Customize_STipTitle" Value="Seçenekler" />
+        <LocalizationItem Name="RibbonPreview_PageGroup_Export" Value="Dışa Ver" />
+        <LocalizationItem Name="RibbonPreview_PageGroup_Navigation" Value="Gezinti" />
+        <LocalizationItem Name="RibbonPreview_PageGroup_Print" Value="Yazdır" />
+        <LocalizationItem Name="RibbonPreview_Print_Caption" Value="Yazdır" />
+        <LocalizationItem Name="RibbonPreview_Save_Caption" Value="Kaydet" />
+        <LocalizationItem Name="TB_TTip_Print" Value="Yazdır" />
+        <LocalizationItem Name="TB_TTip_Search" Value="Ara" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Reports">
+        <LocalizationItem Name="CatAppearance" Value="Görünüm" />
+        <LocalizationItem Name="CatNavigation" Value="Gezinti" />
+        <LocalizationItem Name="CatOptions" Value="Seçenekler" />
+        <LocalizationItem Name="RibbonXRDesign_Close_Caption" Value="Kapat" />
+        <LocalizationItem Name="RibbonXRDesign_Close_STipTitle" Value="Kapat" />
+        <LocalizationItem Name="RibbonXRDesign_Exit_Caption" Value="Çıkış" />
+        <LocalizationItem Name="RibbonXRDesign_Exit_STipTitle" Value="Çıkış" />
+        <LocalizationItem Name="RibbonXRDesign_PageGroup_Edit" Value="Düzenle" />
+        <LocalizationItem Name="RibbonXRDesign_PageGroup_HtmlNavigation" Value="Gezinti" />
+        <LocalizationItem Name="RibbonXRDesign_PageGroup_View" Value="Görünüm" />
+        <LocalizationItem Name="RibbonXRDesign_SaveFile_Caption" Value="Kaydet" />
+        <LocalizationItem Name="RibbonXRDesign_Windows_Caption" Value="Pencereler" />
+        <LocalizationItem Name="SSForm_Btn_Close" Value="Kapat" />
+        <LocalizationItem Name="UD_Capt_MainMenuName" Value="Ana Menü" />
+        <LocalizationItem Name="UD_Capt_StatusBarName" Value="Durum Çubuğu" />
+        <LocalizationItem Name="UD_Capt_ToolbarName" Value="Araç Çubuğu" />
+        <LocalizationItem Name="Verb_About" Value="Hakkında" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraBars">
+        <LocalizationItem Name="CloseButton" Value="Kapat" />
+        <LocalizationItem Name="HelpButton" Value="Yardım" />
+        <LocalizationItem Name="NewToolbarName" Value="Araçlar" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraBars.Docking">
+        <LocalizationItem Name="CommandClose" Value="Kapat" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraBars.Docking2010">
+        <LocalizationItem Name="CommandClose" Value="Kapat" />
+        <LocalizationItem Name="CommandExit" Value="Çıkış" />
+        <LocalizationItem Name="OpenedWindowsDialogCaption" Value="Pencereler" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraCharts">
+        <LocalizationItem Name="AppDefault" Value="Varsayılan" />
+        <LocalizationItem Name="CloseValueMember" Value="Kapat" />
+        <LocalizationItem Name="CmdChangeAppearancePlaceHolderMenuCaption" Value="Görünüm" />
+        <LocalizationItem Name="CmdExportPlaceHolderMenuCaption" Value="Dışa Ver" />
+        <LocalizationItem Name="CmdPrintMenuCaption" Value="Yazdır" />
+        <LocalizationItem Name="PltDefault" Value="Varsayılan" />
+        <LocalizationItem Name="PltIndDefault" Value="Varsayılan" />
+        <LocalizationItem Name="RibbonAppearanceGroupCaption" Value="Görünüm" />
+        <LocalizationItem Name="RibbonOtherPageCaption" Value="Diğer" />
+        <LocalizationItem Name="VerbAbout" Value="Hakkında" />
+        <LocalizationItem Name="WizAppearancePageName" Value="Görünüm" />
+        <LocalizationItem Name="WizIndentDefault" Value="Varsayılan" />
+        <LocalizationItem Name="WizResolveOverlappingModeDefault" Value="Varsayılan" />
+        <LocalizationItem Name="WizValueLevelClose" Value="Kapat" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraEditors">
+        <LocalizationItem Name="DefaultBooleanDefault" Value="Varsayılan" />
+        <LocalizationItem Name="NavigatorEditButtonHint" Value="Düzenle" />
+        <LocalizationItem Name="PictureEditMenuSave" Value="Kaydet" />
+        <LocalizationItem Name="TabHeaderButtonClose" Value="Kapat" />
+        <LocalizationItem Name="TakePictureDialogSave" Value="Kaydet" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraGrid">
+        <LocalizationItem Name="LayoutViewGroupView" Value="Görünüm" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraPivotGrid">
+        <LocalizationItem Name="PrintDesignerCategoryDefault" Value="Varsayılan" />
+        <LocalizationItem Name="PrintDesignerPageOptions" Value="Seçenekler" />
+        <LocalizationItem Name="SearchBoxText" Value="Ara" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraRichEdit">
+        <LocalizationItem Name="MenuCmd_SaveDocument" Value="Kaydet" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraScheduler">
+        <LocalizationItem Name="MenuCmd_SaveSchedule" Value="Kaydet" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="DashboardOrganizationItems">
+      <LocalizationItem Name="Kpi" Value="Kpi" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="DialogButtons">
+      <LocalizationItem Name="Back" Value="&lt; Geri" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Editors.Trend" Value="Trend" />
+      <LocalizationGroup Name="DevExpress.ExpressApp.Kpi.MeasurementType">
+        <LocalizationItem Name="Current" Value="Geçerli" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ModelAccessModifier">
+        <LocalizationItem Name="Allow" Value="İzin Ver" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationOutcome" Value="Doğrulama Sonuçları" />
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationResultType" Value="Doğrulama Sonuç Türü" />
+      <LocalizationGroup Name="DevExpress.XtraBars.Docking.DockVisibility">
+        <LocalizationItem Name="AutoHide" Value="Otomatik Gizle" />
+        <LocalizationItem Name="Hidden" Value="Gizli" />
+        <LocalizationItem Name="Visible" Value="Görünür" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="FileAttachments">
+      <LocalizationItem Name="Editor_Clear" Value="İçeriği Temizle" />
+      <LocalizationItem Name="Editor_Open" Value="Aç" />
+      <LocalizationItem Name="Editor_Save" Value="Farklı Kaydet..." />
+      <LocalizationItem Name="OverwritePrompt" Value=" '{0}' isimli dosya zaten mevcut. Değiştirmek istiyor musunuz?" />
+      <LocalizationItem Name="OverwritePromptCaption" Value="Farklı Kaydet..." />
+      <LocalizationItem Name="WordAll" Value="Tümü" />
+      <LocalizationItem Name="WordFiles" Value="dosyalar" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="FrameTemplates">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.Bars.DetailFormV2">
+        <LocalizationItem Name="_mainMenuBar.Text" Value="Ana Menü" />
+        <LocalizationItem Name="_statusBar.Text" Value="Durum Çubuğu" />
+        <LocalizationItem Name="barContainerAbout.Caption" Value="Hakkında" />
+        <LocalizationItem Name="barContainerClose.Caption" Value="Kapat" />
+        <LocalizationItem Name="barContainerDiagnostic.Caption" Value="Tanı" />
+        <LocalizationItem Name="barContainerEdit.Caption" Value="Düzenle" />
+        <LocalizationItem Name="barContainerExport.Caption" Value="Dışa Ver" />
+        <LocalizationItem Name="barContainerFile.Caption" Value="Dosya" />
+        <LocalizationItem Name="barContainerFilters.Caption" Value="Filtreler" />
+        <LocalizationItem Name="barContainerFullTextSearch.Caption" Value="Tam Metin Arama" />
+        <LocalizationItem Name="barContainerMenu.Caption" Value="Menü" />
+        <LocalizationItem Name="barContainerNotifications.Caption" Value="Bildirimler" />
+        <LocalizationItem Name="barContainerObjectsCreation.Caption" Value="Kayıt Oluşturma" />
+        <LocalizationItem Name="barContainerOpenObject.Caption" Value="İlişkili Kaydı Aç" />
+        <LocalizationItem Name="barContainerOptions.Caption" Value="Seçenekler" />
+        <LocalizationItem Name="barContainerPrint.Caption" Value="Yazdır" />
+        <LocalizationItem Name="barContainerRecordEdit.Caption" Value="Kayıt Düzenle" />
+        <LocalizationItem Name="barContainerRecordsNavigation.Caption" Value="Kayıt Gezintisi" />
+        <LocalizationItem Name="barContainerReports.Caption" Value="Raporlar" />
+        <LocalizationItem Name="barContainerSave.Caption" Value="Kaydet" />
+        <LocalizationItem Name="barContainerSearch.Caption" Value="Ara" />
+        <LocalizationItem Name="barContainerStatusMessages.Caption" Value="Durum Mesajları" />
+        <LocalizationItem Name="barContainerTools.Caption" Value="Araçlar" />
+        <LocalizationItem Name="barContainerUndoRedo.Caption" Value="Geri/İleri" />
+        <LocalizationItem Name="barContainerView.Caption" Value="Görünüm" />
+        <LocalizationItem Name="barContainerWorkflow.Caption" Value="İş Akış" />
+        <LocalizationItem Name="barSubItemEdit.Caption" Value="Düzenle" />
+        <LocalizationItem Name="barSubItemFile.Caption" Value="Dosya" />
+        <LocalizationItem Name="barSubItemHelp.Caption" Value="Yardım" />
+        <LocalizationItem Name="barSubItemTools.Caption" Value="Araçlar" />
+        <LocalizationItem Name="barSubItemView.Caption" Value="Görünüm" />
+        <LocalizationItem Name="standardToolBar.Text" Value="Ana Araç Çubuğu" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.Bars.MainFormV2">
+        <LocalizationItem Name="barChooseSkinItem.Caption" Value="Görünüm" />
+        <LocalizationItem Name="barContainerAbout.Caption" Value="Hakkında" />
+        <LocalizationItem Name="barContainerDefault.Caption" Value="Varsayılan" />
+        <LocalizationItem Name="barContainerDiagnostic.Caption" Value="Tanı" />
+        <LocalizationItem Name="barContainerEdit.Caption" Value="Düzenle" />
+        <LocalizationItem Name="barContainerExit.Caption" Value="Çıkış" />
+        <LocalizationItem Name="barContainerExport.Caption" Value="Dışa Ver" />
+        <LocalizationItem Name="barContainerFile.Caption" Value="Dosya" />
+        <LocalizationItem Name="barContainerFilters.Caption" Value="Filtreler" />
+        <LocalizationItem Name="barContainerFullTextSearch.Caption" Value="Tam Metin Arama" />
+        <LocalizationItem Name="barContainerMenu.Caption" Value="Menü" />
+        <LocalizationItem Name="barContainerNotifications.Caption" Value="Bildirimler" />
+        <LocalizationItem Name="barContainerObjectsCreation.Caption" Value="Kayıt Oluşturma" />
+        <LocalizationItem Name="barContainerOpenObject.Caption" Value="İlişkili Kaydı Aç" />
+        <LocalizationItem Name="barContainerOptions.Caption" Value="Seçenekler" />
+        <LocalizationItem Name="barContainerPanels.Caption" Value="Paneller" />
+        <LocalizationItem Name="barContainerPrint.Caption" Value="Yazdır" />
+        <LocalizationItem Name="barContainerRecordEdit.Caption" Value="Kayıt Düzenle" />
+        <LocalizationItem Name="barContainerRecordsNavigation.Caption" Value="Kayıt Gezintisi" />
+        <LocalizationItem Name="barContainerReports.Caption" Value="Raporlar" />
+        <LocalizationItem Name="barContainerSave.Caption" Value="Kaydet" />
+        <LocalizationItem Name="barContainerSearch.Caption" Value="Ara" />
+        <LocalizationItem Name="barContainerStatusMessages.Caption" Value="Durum Mesajları" />
+        <LocalizationItem Name="barContainerTools.Caption" Value="Araçlar" />
+        <LocalizationItem Name="barContainerUndoRedo.Caption" Value="Geri/İleri" />
+        <LocalizationItem Name="barContainerView.Caption" Value="Görünüm" />
+        <LocalizationItem Name="barContainerViewsHistoryNavigation.Caption" Value="Görünümler Geçmişi" />
+        <LocalizationItem Name="barContainerViewsNavigation.Caption" Value="Gezinti" />
+        <LocalizationItem Name="barContainerWindow.Caption" Value="Pencere" />
+        <LocalizationItem Name="barContainerWindows.Caption" Value="Pencereler" />
+        <LocalizationItem Name="barContainerWorkflow.Caption" Value="İş Akış" />
+        <LocalizationItem Name="barMdiChildrenListItem.Caption" Value="Pencere Listesi" />
+        <LocalizationItem Name="barSubItemEdit.Caption" Value="Düzenle" />
+        <LocalizationItem Name="barSubItemFile.Caption" Value="Dosya" />
+        <LocalizationItem Name="barSubItemHelp.Caption" Value="Yardım" />
+        <LocalizationItem Name="barSubItemPanels.Caption" Value="Paneller" />
+        <LocalizationItem Name="barSubItemTools.Caption" Value="Araçlar" />
+        <LocalizationItem Name="barSubItemView.Caption" Value="Görünüm" />
+        <LocalizationItem Name="barSubItemWindow.Caption" Value="Pencere" />
+        <LocalizationItem Name="dockPanelNavigation.Text" Value="Gezinti" />
+        <LocalizationItem Name="mainMenuBar.Text" Value="Ana Menü" />
+        <LocalizationItem Name="standardToolBar.Text" Value="Ana Araç Çubuğu" />
+        <LocalizationItem Name="statusBar.Text" Value="Durum Çubuğu" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.Bars.NestedFrameTemplateV2">
+        <LocalizationItem Name="barContainerDefault.Caption" Value="Diğer" />
+        <LocalizationItem Name="barContainerDiagnostic.Caption" Value="Tanı" />
+        <LocalizationItem Name="barContainerEdit.Caption" Value="Düzenle" />
+        <LocalizationItem Name="barContainerExport.Caption" Value="Dışa Ver" />
+        <LocalizationItem Name="barContainerFilters.Caption" Value="Filtreler" />
+        <LocalizationItem Name="barContainerLink.Caption" Value="Bağla" />
+        <LocalizationItem Name="barContainerMenu.Caption" Value="Menü" />
+        <LocalizationItem Name="barContainerObjectsCreation.Caption" Value="Kayıt Oluşturma" />
+        <LocalizationItem Name="barContainerOpenObject.Caption" Value="İlişkili Kaydı Aç" />
+        <LocalizationItem Name="barContainerPrint.Caption" Value="Yazdır" />
+        <LocalizationItem Name="barContainerRecordEdit.Caption" Value="Kayıt Düzenle" />
+        <LocalizationItem Name="barContainerRecordsNavigation.Caption" Value="Kayıt Gezintisi" />
+        <LocalizationItem Name="barContainerReports.Caption" Value="Raporlar" />
+        <LocalizationItem Name="barContainerSave.Caption" Value="Kaydet" />
+        <LocalizationItem Name="barContainerView.Caption" Value="Görünüm" />
+        <LocalizationItem Name="barContainerWorkflow.Caption" Value="İş Akış" />
+        <LocalizationItem Name="standardToolBar.Text" Value="Araç Çubuğu" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.DetailViewForm">
+        <LocalizationItem Name="_mainMenuBar.Text" Value="Ana Menü" />
+        <LocalizationItem Name="_statusBar.Text" Value="Durum Çubuğu" />
+        <LocalizationItem Name="barSubItemEdit.Caption" Value="Düzenle" />
+        <LocalizationItem Name="barSubItemFile.Caption" Value="Dosya" />
+        <LocalizationItem Name="barSubItemHelp.Caption" Value="Yardım" />
+        <LocalizationItem Name="barSubItemTools.Caption" Value="Araçlar" />
+        <LocalizationItem Name="barSubItemView.Caption" Value="Görünüm" />
+        <LocalizationItem Name="cAbout.Caption" Value="Hakkında" />
+        <LocalizationItem Name="cClose.Caption" Value="Kapat" />
+        <LocalizationItem Name="cDiagnostic.Caption" Value="Tanı" />
+        <LocalizationItem Name="cEdit.Caption" Value="Düzenle" />
+        <LocalizationItem Name="cExport.Caption" Value="Dışa Ver" />
+        <LocalizationItem Name="cFile.Caption" Value="Dosya" />
+        <LocalizationItem Name="cFilters.Caption" Value="Filtreler" />
+        <LocalizationItem Name="cFullTextSearch.Caption" Value="Tam Metin Arama" />
+        <LocalizationItem Name="cMenu.Caption" Value="Menü" />
+        <LocalizationItem Name="cObjectsCreation.Caption" Value="Kayıt Oluşturma" />
+        <LocalizationItem Name="cOpenObject.Caption" Value="İlişkili Kaydı Aç" />
+        <LocalizationItem Name="cOptions.Caption" Value="Seçenekler" />
+        <LocalizationItem Name="cPrint.Caption" Value="Yazdır" />
+        <LocalizationItem Name="cRecordEdit.Caption" Value="Kayıt Düzenle" />
+        <LocalizationItem Name="cRecordsNavigation.Caption" Value="Kayıt Gezintisi" />
+        <LocalizationItem Name="cReports.Caption" Value="Raporlar" />
+        <LocalizationItem Name="cReports.TargetPageGroupCaption" Value="Görünüm" />
+        <LocalizationItem Name="cSave.Caption" Value="Kaydet" />
+        <LocalizationItem Name="cSearch.Caption" Value="Ara" />
+        <LocalizationItem Name="cTools.Caption" Value="Araçlar" />
+        <LocalizationItem Name="cUndoRedo.Caption" Value="Geri/İleri" />
+        <LocalizationItem Name="cUndoRedo.TargetPageGroupCaption" Value="Düzenle" />
+        <LocalizationItem Name="cView.Caption" Value="Görünüm" />
+        <LocalizationItem Name="cWorkflow.Caption" Value="İş Akış" />
+        <LocalizationItem Name="standardToolBar.Text" Value="Ana Araç Çubuğu" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.MainForm">
+        <LocalizationItem Name="_mainMenuBar.Text" Value="Ana Menü" />
+        <LocalizationItem Name="_statusBar.Text" Value="Durum Çubuğu" />
+        <LocalizationItem Name="barMdiChildrenListItem.Caption" Value="Pencere Listesi" />
+        <LocalizationItem Name="barSubItemEdit.Caption" Value="Düzenle" />
+        <LocalizationItem Name="barSubItemFile.Caption" Value="Dosya" />
+        <LocalizationItem Name="barSubItemHelp.Caption" Value="Yardım" />
+        <LocalizationItem Name="barSubItemPanels.Caption" Value="Paneller" />
+        <LocalizationItem Name="barSubItemTools.Caption" Value="Araçlar" />
+        <LocalizationItem Name="barSubItemView.Caption" Value="Görünüm" />
+        <LocalizationItem Name="barSubItemWindow.Caption" Value="Pencere" />
+        <LocalizationItem Name="cAbout.Caption" Value="Hakkında" />
+        <LocalizationItem Name="cAppearance.Caption" Value="Görünüm" />
+        <LocalizationItem Name="cDefault.Caption" Value="Varsayılan" />
+        <LocalizationItem Name="cDiagnostic.Caption" Value="Tanı" />
+        <LocalizationItem Name="cEdit.Caption" Value="Düzenle" />
+        <LocalizationItem Name="cExit.Caption" Value="Çıkış" />
+        <LocalizationItem Name="cExport.Caption" Value="Dışa Ver" />
+        <LocalizationItem Name="cFile.Caption" Value="Dosya" />
+        <LocalizationItem Name="cFilters.Caption" Value="Filtreler" />
+        <LocalizationItem Name="cFullTextSearch.Caption" Value="Tam Metin Arama" />
+        <LocalizationItem Name="cMenu.Caption" Value="Menü" />
+        <LocalizationItem Name="cObjectsCreation.Caption" Value="Kayıt Oluşturma" />
+        <LocalizationItem Name="cOpenObject.Caption" Value="İlişkili Kaydı Aç" />
+        <LocalizationItem Name="cOptions.Caption" Value="Seçenekler" />
+        <LocalizationItem Name="cPanels.Caption" Value="Paneller" />
+        <LocalizationItem Name="cPanels.TargetPageCaption" Value="Görünüm" />
+        <LocalizationItem Name="cPrint.Caption" Value="Yazdır" />
+        <LocalizationItem Name="cRecordEdit.Caption" Value="Kayıt Düzenle" />
+        <LocalizationItem Name="cRecordsNavigation.Caption" Value="Kayıt Gezintisi" />
+        <LocalizationItem Name="cReports.Caption" Value="Raporlar" />
+        <LocalizationItem Name="cReports.TargetPageGroupCaption" Value="Görünüm" />
+        <LocalizationItem Name="cSave.Caption" Value="Kaydet" />
+        <LocalizationItem Name="cSearch.Caption" Value="Ara" />
+        <LocalizationItem Name="cTools.Caption" Value="Araçlar" />
+        <LocalizationItem Name="cUndoRedo.Caption" Value="Geri/İleri" />
+        <LocalizationItem Name="cUndoRedo.TargetPageGroupCaption" Value="Düzenle" />
+        <LocalizationItem Name="cView.Caption" Value="Görünüm" />
+        <LocalizationItem Name="cViewsHistoryNavigation.Caption" Value="Görünümler Geçmişi" />
+        <LocalizationItem Name="cViewsNavigation.Caption" Value="Gezinti" />
+        <LocalizationItem Name="cWindows.Caption" Value="Pencereler" />
+        <LocalizationItem Name="cWindows.TargetPageCaption" Value="Görünüm" />
+        <LocalizationItem Name="cWorkflow.Caption" Value="İş Akış" />
+        <LocalizationItem Name="dockPanelNavigation.Text" Value="Gezinti" />
+        <LocalizationItem Name="standardToolBar.Text" Value="Ana Araç Çubuğu" />
+        <LocalizationItem Name="Window.Caption" Value="Pencere" />
+        <LocalizationItem Name="Window.TargetPageCaption" Value="Görünüm" />
+        <LocalizationItem Name="Window.TargetPageGroupCaption" Value="Pencereler" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.NestedFrameTemplate">
+        <LocalizationItem Name="cDefault.Caption" Value="Diğer" />
+        <LocalizationItem Name="cDiagnostic.Caption" Value="Tanı" />
+        <LocalizationItem Name="cEdit.Caption" Value="Düzenle" />
+        <LocalizationItem Name="cExport.Caption" Value="Dışa Ver" />
+        <LocalizationItem Name="cFilters.Caption" Value="Filtreler" />
+        <LocalizationItem Name="cMenu.Caption" Value="Menü" />
+        <LocalizationItem Name="cObjectsCreation.Caption" Value="Kayıt Oluşturma" />
+        <LocalizationItem Name="cOpenObject.Caption" Value="İlişkili Kaydı Aç" />
+        <LocalizationItem Name="cPrint.Caption" Value="Yazdır" />
+        <LocalizationItem Name="cRecordEdit.Caption" Value="Kayıt Düzenle" />
+        <LocalizationItem Name="cRecordsNavigation.Caption" Value="Kayıt Gezintisi" />
+        <LocalizationItem Name="cReports.Caption" Value="Raporlar" />
+        <LocalizationItem Name="cSave.Caption" Value="Kaydet" />
+        <LocalizationItem Name="cView.Caption" Value="Görünüm" />
+        <LocalizationItem Name="cWorkflow.Caption" Value="İş Akış" />
+        <LocalizationItem Name="standardToolBar.Text" Value="Araç Çubuğu" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.Ribbon.DetailRibbonFormV2">
+        <LocalizationItem Name="barContainerAbout.Caption" Value="Hakkında" />
+        <LocalizationItem Name="barContainerClose.Caption" Value="Kapat" />
+        <LocalizationItem Name="barContainerDiagnostic.Caption" Value="Tanı" />
+        <LocalizationItem Name="barContainerEdit.Caption" Value="Düzenle" />
+        <LocalizationItem Name="barContainerExport.Caption" Value="Dışa Ver" />
+        <LocalizationItem Name="barContainerFile.Caption" Value="Dosya" />
+        <LocalizationItem Name="barContainerFilters.Caption" Value="Filtreler" />
+        <LocalizationItem Name="barContainerFullTextSearch.Caption" Value="Tam Metin Arama" />
+        <LocalizationItem Name="barContainerMenu.Caption" Value="Menü" />
+        <LocalizationItem Name="barContainerNotifications.Caption" Value="Bildirimler" />
+        <LocalizationItem Name="barContainerObjectsCreation.Caption" Value="Kayıt Oluşturma" />
+        <LocalizationItem Name="barContainerOpenObject.Caption" Value="İlişkili Kaydı Aç" />
+        <LocalizationItem Name="barContainerOptions.Caption" Value="Seçenekler" />
+        <LocalizationItem Name="barContainerPrint.Caption" Value="Yazdır" />
+        <LocalizationItem Name="barContainerRecordEdit.Caption" Value="Kayıt Düzenle" />
+        <LocalizationItem Name="barContainerRecordsNavigation.Caption" Value="Kayıt Gezintisi" />
+        <LocalizationItem Name="barContainerReports.Caption" Value="Raporlar" />
+        <LocalizationItem Name="barContainerSave.Caption" Value="Kaydet" />
+        <LocalizationItem Name="barContainerSearch.Caption" Value="Ara" />
+        <LocalizationItem Name="barContainerStatusMessages.Caption" Value="Durum Mesajları" />
+        <LocalizationItem Name="barContainerTools.Caption" Value="Araçlar" />
+        <LocalizationItem Name="barContainerUndoRedo.Caption" Value="Geri/İleri" />
+        <LocalizationItem Name="barContainerView.Caption" Value="Görünüm" />
+        <LocalizationItem Name="barContainerWorkflow.Caption" Value="İş Akış" />
+        <LocalizationItem Name="ribbonGroupClose.Text" Value="Kapat" />
+        <LocalizationItem Name="ribbonGroupDiagnostic.Text" Value="Tanı" />
+        <LocalizationItem Name="ribbonGroupEdit.Text" Value="Düzenle" />
+        <LocalizationItem Name="ribbonGroupFilters.Text" Value="Filtreler" />
+        <LocalizationItem Name="ribbonGroupFullTextSearch.Text" Value="Tam Metin Arama" />
+        <LocalizationItem Name="ribbonGroupObjectsCreation.Text" Value="Kayıt Oluşturma" />
+        <LocalizationItem Name="ribbonGroupOpenObject.Text" Value="İlişkili Kaydı Aç" />
+        <LocalizationItem Name="ribbonGroupOptions.Text" Value="Seçenekler" />
+        <LocalizationItem Name="ribbonGroupRecordEdit.Text" Value="Kayıt Düzenle" />
+        <LocalizationItem Name="ribbonGroupRecordsNavigation.Text" Value="Kayıt Gezintisi" />
+        <LocalizationItem Name="ribbonGroupSave.Text" Value="Kaydet" />
+        <LocalizationItem Name="ribbonGroupSearch.Text" Value="Ara" />
+        <LocalizationItem Name="ribbonGroupTools.Text" Value="Araçlar" />
+        <LocalizationItem Name="ribbonGroupView.Text" Value="Görünüm" />
+        <LocalizationItem Name="ribbonGroupWorkflow.Text" Value="İş Akış" />
+        <LocalizationItem Name="toolsPage.Text" Value="Araçlar" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Win.Templates.Ribbon.MainRibbonFormV2">
+        <LocalizationItem Name="barContainerAbout.Caption" Value="Hakkında" />
+        <LocalizationItem Name="barContainerDefault.Caption" Value="Varsayılan" />
+        <LocalizationItem Name="barContainerDiagnostic.Caption" Value="Tanı" />
+        <LocalizationItem Name="barContainerEdit.Caption" Value="Düzenle" />
+        <LocalizationItem Name="barContainerExit.Caption" Value="Çıkış" />
+        <LocalizationItem Name="barContainerExport.Caption" Value="Dışa Ver" />
+        <LocalizationItem Name="barContainerFile.Caption" Value="Dosya" />
+        <LocalizationItem Name="barContainerFilters.Caption" Value="Filtreler" />
+        <LocalizationItem Name="barContainerFullTextSearch.Caption" Value="Tam Metin Arama" />
+        <LocalizationItem Name="barContainerMenu.Caption" Value="Menü" />
+        <LocalizationItem Name="barContainerNotifications.Caption" Value="Bildirimler" />
+        <LocalizationItem Name="barContainerObjectsCreation.Caption" Value="Kayıt Oluşturma" />
+        <LocalizationItem Name="barContainerOpenObject.Caption" Value="İlişkili Kaydı Aç" />
+        <LocalizationItem Name="barContainerOptions.Caption" Value="Seçenekler" />
+        <LocalizationItem Name="barContainerPanels.Caption" Value="Paneller" />
+        <LocalizationItem Name="barContainerPrint.Caption" Value="Yazdır" />
+        <LocalizationItem Name="barContainerRecordEdit.Caption" Value="Kayıt Düzenle" />
+        <LocalizationItem Name="barContainerRecordsNavigation.Caption" Value="Kayıt Gezintisi" />
+        <LocalizationItem Name="barContainerReports.Caption" Value="Raporlar" />
+        <LocalizationItem Name="barContainerSave.Caption" Value="Kaydet" />
+        <LocalizationItem Name="barContainerSearch.Caption" Value="Ara" />
+        <LocalizationItem Name="barContainerStatusMessages.Caption" Value="Durum Mesajları" />
+        <LocalizationItem Name="barContainerTools.Caption" Value="Araçlar" />
+        <LocalizationItem Name="barContainerUndoRedo.Caption" Value="Geri/İleri" />
+        <LocalizationItem Name="barContainerView.Caption" Value="Görünüm" />
+        <LocalizationItem Name="barContainerViewsHistoryNavigation.Caption" Value="Görünümler Geçmişi" />
+        <LocalizationItem Name="barContainerViewsNavigation.Caption" Value="Gezinti" />
+        <LocalizationItem Name="barContainerWindows.Caption" Value="Pencereler" />
+        <LocalizationItem Name="barContainerWorkflow.Caption" Value="İş Akış" />
+        <LocalizationItem Name="barMdiChildrenListItem.Caption" Value="Pencere Listesi" />
+        <LocalizationItem Name="barSubItemPanels.Caption" Value="Paneller" />
+        <LocalizationItem Name="dockPanelNavigation.Text" Value="Gezinti" />
+        <LocalizationItem Name="ribbonGroupAppearance.Text" Value="Görünüm" />
+        <LocalizationItem Name="ribbonGroupDefault.Text" Value="Varsayılan" />
+        <LocalizationItem Name="ribbonGroupDiagnostic.Text" Value="Tanı" />
+        <LocalizationItem Name="ribbonGroupEdit.Text" Value="Düzenle" />
+        <LocalizationItem Name="ribbonGroupFilters.Text" Value="Filtreler" />
+        <LocalizationItem Name="ribbonGroupFullTextSearch.Text" Value="Tam Metin Arama" />
+        <LocalizationItem Name="ribbonGroupObjectsCreation.Text" Value="Kayıt Oluşturma" />
+        <LocalizationItem Name="ribbonGroupOpenObject.Text" Value="İlişkili Kaydı Aç" />
+        <LocalizationItem Name="ribbonGroupOptions.Text" Value="Seçenekler" />
+        <LocalizationItem Name="ribbonGroupRecordEdit.Text" Value="Kayıt Düzenle" />
+        <LocalizationItem Name="ribbonGroupRecordsNavigation.Text" Value="Kayıt Gezintisi" />
+        <LocalizationItem Name="ribbonGroupSave.Text" Value="Kaydet" />
+        <LocalizationItem Name="ribbonGroupSearch.Text" Value="Ara" />
+        <LocalizationItem Name="ribbonGroupTools.Text" Value="Araçlar" />
+        <LocalizationItem Name="ribbonGroupView.Text" Value="Görünüm" />
+        <LocalizationItem Name="ribbonGroupViewsHistoryNavigation.Text" Value="Görünümler Geçmişi" />
+        <LocalizationItem Name="ribbonGroupViewsNavigation.Text" Value="Gezinti" />
+        <LocalizationItem Name="ribbonGroupWindows.Text" Value="Pencereler" />
+        <LocalizationItem Name="ribbonGroupWorkflow.Text" Value="İş Akış" />
+        <LocalizationItem Name="toolsPage.Text" Value="Araçlar" />
+        <LocalizationItem Name="viewPage.Text" Value="Görünüm" />
+        <LocalizationItem Name="windowPage.Text" Value="Pencere" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="SchedulerResourceDeletingWarning" Value="Değişikliklerin yüklenmesi için lütfen takvim detayları görünümünü yenileyin." />
+      <LocalizationItem Name="ValidationErrorMessage" Value="Doğrulama Hatası" />
+      <LocalizationItem Name="ValidationInformationMessage" Value="Doğrulama bilgisi" />
+      <LocalizationItem Name="ValidationWarningMessage" Value="Doğrulama uyarısı" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Namespaces">
+      <LocalizationItem Name="DevExpress.ExpressApp.Kpi" Value="Kpi" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="OpenSaveDialogFilters">
+      <LocalizationItem Name="AllFiles" Value="Tüm dosyalar" />
+      <LocalizationItem Name="BmpFiles" Value="Bmp dosyaları" />
+      <LocalizationItem Name="CsvFiles" Value="CSV dosyaları" />
+      <LocalizationItem Name="EmfFiles" Value="Emf dosyaları" />
+      <LocalizationItem Name="GifFiles" Value="GIF dosyaları" />
+      <LocalizationItem Name="HtmlFiles" Value="Html dosyaları" />
+      <LocalizationItem Name="JpegFiles" Value="Jpeg dosyaları" />
+      <LocalizationItem Name="MhtFiles" Value="Mht dosyaları" />
+      <LocalizationItem Name="PdfFiles" Value="Pdf dosyaları" />
+      <LocalizationItem Name="PngFiles" Value="Png dosyaları" />
+      <LocalizationItem Name="RtfFiles" Value="Rtf dosyaları" />
+      <LocalizationItem Name="TextFiles" Value="Text dosyaları" />
+      <LocalizationItem Name="TiffFiles" Value="Tiff dosyaları" />
+      <LocalizationItem Name="WmfFiles" Value="Wmf dosyaları" />
+      <LocalizationItem Name="XlsFiles" Value="Xls dosyaları" />
+      <LocalizationItem Name="XlsxFiles" Value="Xlsx dosyaları" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Ribbon">
+      <LocalizationItem Name="ActionsPageGroup" Value="Eylemler" />
+      <LocalizationItem Name="HomePage" Value="Ana Sayfa" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Texts">
+      <LocalizationItem Name="Aggregates" Value="Toplama işlemleri" />
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default" Caption="Sistem">
+        <Items>
+          <Item Id="MyDetails" Caption="Detaylarım" />
+        </Items>
+      </Item>
+      <Item Id="Reports" Caption="Raporlar" />
+    </Items>
+  </NavigationItems>
+  <Validation>
+    <ErrorMessageTemplates>
+      <RuleCombinationOfPropertiesIsUnique MessageTemplateCombinationOfPropertiesMustBeUnique="Aşağıdaki özelliklerin kombinasyonu benzersiz olmalıdır: {FormattedTargetProperties}." />
+      <RuleIsReferenced MessageTemplateMustBeReferenced="&quot;{TargetObject}&quot; nesne referans olmalıdır." />
+      <RuleRange MessageTemplateMustBeInRange="&quot;{TargetPropertyName}&quot; &quot;{MinimumValue}&quot; ve &quot;{MaximumValue}&quot; aralığında olmalıdır, değerler dahildir." />
+      <RuleRequiredField MessageTemplateMustNotBeEmpty="&quot;{TargetPropertyName}&quot; boş olmamalıdır." />
+      <RuleStringComparison MessageTemplateMustBeEqual="&quot;{TargetPropertyName}&quot; &quot;{OperandValue}&quot; eşit olmalıdır." MessageTemplateMustBeginWith="&quot;{TargetPropertyName}&quot; &quot;{OperandValue}&quot; ile başlamadırı." MessageTemplateMustContain="&quot;{TargetPropertyName}&quot; &quot;{OperandValue}&quot; içermelidir." MessageTemplateMustEndWith="&quot;{TargetPropertyName}&quot; &quot;{OperandValue}&quot; ile bitmelidir." MessageTemplateMustNotBeEqual="&quot;{TargetPropertyName}&quot; &quot;{OperandValue}&quot; eşit olmalıdır." />
+      <RuleUniqueValue MessageTemplateMustBeUnique="&quot;{TargetPropertyName}&quot; için belirtilen aynı değere sahip bir nesne vardır. &quot;{TargetPropertyName}&quot; değerleri benzersiz olmalıdır." />
+      <RuleValueComparison MessageTemplateMustBeEqualToOperand="&quot;{TargetPropertyName}&quot; &quot;{RightOperand}&quot; eşit olmalıdır." MessageTemplateMustBeGreaterThanOperand="&quot;{TargetPropertyName}&quot; &quot;{RightOperand}&quot; 'dan büyük olmalıdır." MessageTemplateMustBeGreaterThanOrEqualToOperand="&quot;{TargetPropertyName}&quot; &quot;{RightOperand}&quot; 'dan büyük veya eşit olmalıdır." MessageTemplateMustBeLessThanOperand="&quot;{TargetPropertyName}&quot; &quot;{RightOperand}&quot; 'den az olmalıdır." MessageTemplateMustBeLessThanOrEqualToOperand="&quot;{TargetPropertyName}&quot; &quot;{RightOperand}&quot; 'den az veya eşit olmalıdır." MessageTemplateMustNotBeEqualToOperand="&quot;{TargetPropertyName}&quot; &quot;{RightOperand}&quot; eşit olmalıdır." />
+    </ErrorMessageTemplates>
+    <Rules>
+      <RuleFromBoolProperty Id="HCategoryCircularReferences" CustomMessageTemplate="Döngüsel referans algılandı. Bu hatayı düzeltmek için, başka bir değere Parent özelliğini ayarlayın." />
+      <RuleFromBoolProperty Id="RuleFromBoolProperty_ViewVariantParameterObject.IsUniqueCaption" CustomMessageTemplate="Aynı isimde bir düzen zaten mevcut olduğundan farklı bir değer belirtmeniz gerekir." />
+      <RuleUniqueValue Id="SecuritySystemRoleBase_Name_RuleUniqueValue" CustomMessageTemplate="Girilen rol ismi zaten sistemde kayıtlı." />
+      <RuleRequiredField Id="SecuritySystemUser_Roles_RuleRequiredField" CustomMessageTemplate="Etkin bir kullanıcının en az bir rol ataması gerekir" />
+      <RuleUniqueValue Id="SecuritySystemUser_UserName_RuleUniqueValue" CustomMessageTemplate="Girdiğiniz kullanıcı ismi sistemde zaten mevcut" />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="AboutInfo_DetailView" Caption="Hakkında" />
+    <DetailView Id="KpiDefinition_DetailView">
+      <Layout>
+        <TabbedGroup Id="Tabs">
+          <LayoutGroup Id="Definition">
+            <LayoutGroup Id="Options" Caption="Seçenekler" />
+          </LayoutGroup>
+        </TabbedGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="KpiInstance_Chart_DetailView" Caption="KPI" />
+    <DetailView Id="ProcessDataLockingInfoMergeDialog_DetailView" Caption="Uyarı">
+      <Items>
+        <StaticText Id="Message" Text="Kaydetmeye çalıştığınız bilgiler başka bir kullanıcı tarafından değiştirildi.&#xD;&#xA;Değişiklikleri birleştirebilir, verileri yenileyip ve değişiklikleri iptal edebilir, ya da kaydetme işlemini iptal edebilirsiniz." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ProcessDataLockingInfoRefreshDialog_DetailView" Caption="Uyarı">
+      <Items>
+        <StaticText Id="Message" Text="Kaydetmeye çalıştığınız bilgiler başka bir kullanıcı tarafından değiştirildi.&#xD;&#xA;Değişiklikleri birleştirebilir, verileri yenileyip ve değişiklikleri iptal edebilir, ya da kaydetme işlemini iptal edebilirsiniz." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ResetPasswordParameters_DetailView">
+      <Items>
+        <StaticText Id="ResetPasswordText" Text="Kullanıcının parolasını ayarlamak otomatik olarak kullanıcı için yeni bir parola oluşturmak ve aynı zamanda eski parola ile kullanıcının girişini devre dışı bırakır. Daha sonra kullanıcıya yeni parola verilmelidir, kullanıcı bu esnada uygulama ile çalışmaya devam edebilir. Bunu yapmak istediğinizden emin misiniz?" />
+      </Items>
+    </DetailView>
+    <DetailView Id="SecuritySystemUser_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Roles_Group1" Caption="Roller" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="TypePermissionMatrixItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="MemberPermissions" Caption="Üye İzinleri" />
+            <LayoutGroup Id="ObjectPermissions" Caption="Nesne İzinleri" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

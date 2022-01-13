@@ -1,0 +1,32 @@
+﻿<ion-view id="producttype" view-title="Ürün Tipi">
+    <ion-header-bar class="bar bar-subheader item-input-inset">
+        <label class="item item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="Ara" ng-model="search.Name">
+        </label>
+    </ion-header-bar>
+    <ion-content padding="true">
+        <ion-refresher pulling-text="Yenilemek için bırak..." on-refresh="doRefresh()"></ion-refresher>
+        <div id="chart" dx-chart="chartOptions"></div>
+        <ion-list>
+            <ion-item class="item-button-right" collection-repeat="item in data | filter:search">
+                <div class="row">
+                    <div class="col-80">
+                        <h2>{{ item.Name }}</h2>
+                        <p>{{ item.cQuantity | number:2 }} KG</p>
+                    </div>
+                    <div class="col-20">
+                        <div class="buttons">
+                            <button class="button button-light" ng-click="openModal(item)">
+                                <i class="icon ion-ios-arrow-up"></i>
+                            </button>
+                            <button class="button button-light" ng-click="go(item.Oid)">
+                                <i class="icon ion-ios-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

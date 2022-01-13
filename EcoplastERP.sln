@@ -1,0 +1,114 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoplastERP.Module", "EcoplastERP.Module\EcoplastERP.Module.csproj", "{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoplastERP.Module.Web", "EcoplastERP.Module.Web\EcoplastERP.Module.Web.csproj", "{0C729AAD-7626-4668-A7F1-35F7D240489D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoplastERP.Module.Win", "EcoplastERP.Module.Win\EcoplastERP.Module.Win.csproj", "{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoplastERP.PTC", "EcoplastERP.PTC\EcoplastERP.PTC.csproj", "{22C97AF5-0E80-4539-AC2F-4B5B0C9EE59A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoplastERP.Web", "EcoplastERP.Web\EcoplastERP.Web.csproj", "{82A6DBC9-B1B4-44E4-9718-55DF930CD349}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoplastERP.Win", "EcoplastERP.Win\EcoplastERP.Win.csproj", "{D05D93DF-312D-4D4E-B980-726871EC7833}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoplastERP.WebMobile", "EcoplastERP.WebMobile\EcoplastERP.WebMobile.csproj", "{88281F03-C50F-482A-919E-4C590AB21A44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoplastERP.MobileReport", "EcoplastERP.MobileReport\EcoplastERP.MobileReport.csproj", "{5475812F-64DA-45A1-9015-08F07EF824AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		EasyTest|Any CPU = EasyTest|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C729AAD-7626-4668-A7F1-35F7D240489D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C729AAD-7626-4668-A7F1-35F7D240489D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C729AAD-7626-4668-A7F1-35F7D240489D}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{0C729AAD-7626-4668-A7F1-35F7D240489D}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{0C729AAD-7626-4668-A7F1-35F7D240489D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C729AAD-7626-4668-A7F1-35F7D240489D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22C97AF5-0E80-4539-AC2F-4B5B0C9EE59A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C97AF5-0E80-4539-AC2F-4B5B0C9EE59A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22C97AF5-0E80-4539-AC2F-4B5B0C9EE59A}.EasyTest|Any CPU.ActiveCfg = Release|Any CPU
+		{22C97AF5-0E80-4539-AC2F-4B5B0C9EE59A}.EasyTest|Any CPU.Build.0 = Release|Any CPU
+		{22C97AF5-0E80-4539-AC2F-4B5B0C9EE59A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22C97AF5-0E80-4539-AC2F-4B5B0C9EE59A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82A6DBC9-B1B4-44E4-9718-55DF930CD349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A6DBC9-B1B4-44E4-9718-55DF930CD349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A6DBC9-B1B4-44E4-9718-55DF930CD349}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{82A6DBC9-B1B4-44E4-9718-55DF930CD349}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{82A6DBC9-B1B4-44E4-9718-55DF930CD349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A6DBC9-B1B4-44E4-9718-55DF930CD349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D05D93DF-312D-4D4E-B980-726871EC7833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D05D93DF-312D-4D4E-B980-726871EC7833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D05D93DF-312D-4D4E-B980-726871EC7833}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{D05D93DF-312D-4D4E-B980-726871EC7833}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{D05D93DF-312D-4D4E-B980-726871EC7833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D05D93DF-312D-4D4E-B980-726871EC7833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88281F03-C50F-482A-919E-4C590AB21A44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88281F03-C50F-482A-919E-4C590AB21A44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88281F03-C50F-482A-919E-4C590AB21A44}.EasyTest|Any CPU.ActiveCfg = Release|Any CPU
+		{88281F03-C50F-482A-919E-4C590AB21A44}.EasyTest|Any CPU.Build.0 = Release|Any CPU
+		{88281F03-C50F-482A-919E-4C590AB21A44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88281F03-C50F-482A-919E-4C590AB21A44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5475812F-64DA-45A1-9015-08F07EF824AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5475812F-64DA-45A1-9015-08F07EF824AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5475812F-64DA-45A1-9015-08F07EF824AB}.EasyTest|Any CPU.ActiveCfg = Release|Any CPU
+		{5475812F-64DA-45A1-9015-08F07EF824AB}.EasyTest|Any CPU.Build.0 = Release|Any CPU
+		{5475812F-64DA-45A1-9015-08F07EF824AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5475812F-64DA-45A1-9015-08F07EF824AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02802A08-C9E8-40FE-9224-6888343243F9}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mdags.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = EcoplastERP.Module\\EcoplastERP.Module.csproj
+		SccProjectName1 = EcoplastERP.Module
+		SccLocalPath1 = EcoplastERP.Module
+		SccProjectUniqueName2 = EcoplastERP.Module.Web\\EcoplastERP.Module.Web.csproj
+		SccProjectName2 = EcoplastERP.Module.Web
+		SccLocalPath2 = EcoplastERP.Module.Web
+		SccProjectUniqueName3 = EcoplastERP.Module.Win\\EcoplastERP.Module.Win.csproj
+		SccProjectName3 = EcoplastERP.Module.Win
+		SccLocalPath3 = EcoplastERP.Module.Win
+		SccProjectUniqueName4 = EcoplastERP.PTC\\EcoplastERP.PTC.csproj
+		SccProjectName4 = EcoplastERP.PTC
+		SccLocalPath4 = EcoplastERP.PTC
+		SccProjectUniqueName5 = EcoplastERP.Web\\EcoplastERP.Web.csproj
+		SccProjectName5 = EcoplastERP.Web
+		SccLocalPath5 = EcoplastERP.Web
+		SccProjectUniqueName6 = EcoplastERP.Win\\EcoplastERP.Win.csproj
+		SccProjectName6 = EcoplastERP.Win
+		SccLocalPath6 = EcoplastERP.Win
+		SccProjectUniqueName7 = EcoplastERP.WebMobile\\EcoplastERP.WebMobile.csproj
+		SccProjectName7 = EcoplastERP.WebMobile
+		SccLocalPath7 = EcoplastERP.WebMobile
+		SccProjectUniqueName8 = EcoplastERP.MobileReport\\EcoplastERP.MobileReport.csproj
+		SccProjectName8 = EcoplastERP.MobileReport
+		SccLocalPath8 = EcoplastERP.MobileReport
+	EndGlobalSection
+EndGlobal

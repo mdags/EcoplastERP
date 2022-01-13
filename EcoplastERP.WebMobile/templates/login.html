@@ -1,0 +1,23 @@
+﻿<ion-view id="login" hide-nav-bar="true">
+    <ion-content padding="false" scroll="false">
+        <form name="form">
+            <div class="header padding text-center">
+                <img src="../images/logo.png" width="120" height="120" alt="Perfect ERP" />
+                <h3>Perfect ERP Mobile</h3>
+            </div>
+            <ion-list>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Kullanıcı Adı</span>
+                    <input type="text" placeholder="Kullanıcı Adı" ng-model="user.username" autofocus required>
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Şifre</span>
+                    <input type="password" placeholder="Şifre" ng-model="user.password" required>
+                </label>
+                <button class="button button-block button-dark" ng-disabled="form.$invalid" ng-click="login(user)">
+                    Oturum Aç
+                </button>
+            </ion-list>
+        </form>
+    </ion-content>
+</ion-view>

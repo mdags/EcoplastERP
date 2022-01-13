@@ -1,0 +1,3 @@
+select D.Name, (select COUNT(Oid) from Employee where GCRecord is null and LeaveDate is null and Department = D.Oid) as [EmployeeCount] from Department D where D.GCRecord is null order by D.Name
+
+select D.Name as [DepartmentName], E.NameSurname, P.Name as [DepartmentPartName], T.Name as [TaskName], WP.Name as [WorkPlaceName] from Employee E inner join Department D on D.Oid = E.Department inner join DepartmentPart P on P.Oid = E.DepartmentPart inner join EmployeeTask T on T.Oid = E.EmployeeTask inner join WorkPlace WP on WP.Oid = E.WorkPlace where E.GCRecord is null and E.LeaveDate is null and D.Name = @department order by D.Name, E.NameSurname

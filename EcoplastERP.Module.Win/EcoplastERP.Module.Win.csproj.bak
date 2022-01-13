@@ -1,0 +1,912 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EcoplastERP.Module.Win</RootNamespace>
+    <AssemblyName>EcoplastERP.Module.Win</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\EasyTest\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EASYTEST</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Reports.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.2.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Win.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualC" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Input.Manipulations" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AnalysisCertificateViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\AnalysisCertificateViewController.Designer.cs">
+      <DependentUpon>AnalysisCertificateViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ColumnAutoWidthViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ColumnAutoWidthViewController.Designer.cs">
+      <DependentUpon>ColumnAutoWidthViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CuttingMachineGroupReportViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\CuttingMachineGroupReportViewController.Designer.cs">
+      <DependentUpon>CuttingMachineGroupReportViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DailyProductionAnalysisWinViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DailyProductionAnalysisWinViewController.Designer.cs">
+      <DependentUpon>DailyProductionAnalysisWinViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ErusluMovementReportWinViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ErusluMovementReportWinViewController.Designer.cs">
+      <DependentUpon>ErusluMovementReportWinViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ErusluSalesOrderReportViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ErusluSalesOrderReportViewController.Designer.cs">
+      <DependentUpon>ErusluSalesOrderReportViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ErusluStoreReportWinViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ErusluStoreReportWinViewController.Designer.cs">
+      <DependentUpon>ErusluStoreReportWinViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\GenProdStatusReportViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\GenProdStatusReportViewController.Designer.cs">
+      <DependentUpon>GenProdStatusReportViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\MachineCapacityTargetReportViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\MachineCapacityTargetReportViewController.Designer.cs">
+      <DependentUpon>MachineCapacityTargetReportViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\NotifyShippedViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\NotifyShippedViewController.Designer.cs">
+      <DependentUpon>NotifyShippedViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ProductionReportViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ProductionReportViewController.Designer.cs">
+      <DependentUpon>ProductionReportViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\RawMaterialReportViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\RawMaterialReportViewController.Designer.cs">
+      <DependentUpon>RawMaterialReportViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\SalesOrderAnalysisViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\SalesOrderAnalysisViewController.Designer.cs">
+      <DependentUpon>SalesOrderAnalysisViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\SalesOrderReportViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\SalesOrderReportViewController.Designer.cs">
+      <DependentUpon>SalesOrderReportViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\DailyProductionAnalysisUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\DailyProductionAnalysisUserControl.Designer.cs">
+      <DependentUpon>DailyProductionAnalysisUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\SalesReturnMovementReportUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\SalesReturnMovementReportUserControl.Designer.cs">
+      <DependentUpon>SalesReturnMovementReportUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\SalesReturnMovementReportWinViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\SalesReturnMovementReportWinViewController.Designer.cs">
+      <DependentUpon>SalesReturnMovementReportWinViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\SalesReturnReportViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\SalesReturnReportViewController.Designer.cs">
+      <DependentUpon>SalesReturnReportViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ShippingAnalysisViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ShippingAnalysisViewController.Designer.cs">
+      <DependentUpon>ShippingAnalysisViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ShowColumnCustomizationViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ShowColumnCustomizationViewController.Designer.cs">
+      <DependentUpon>ShowColumnCustomizationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\StatusBarWindowController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\StatusBarWindowController.Designer.cs">
+      <DependentUpon>StatusBarWindowController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\StorePastReportWinViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\StorePastReportWinViewController.Designer.cs">
+      <DependentUpon>StorePastReportWinViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\StoreReportViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\StoreReportViewController.Designer.cs">
+      <DependentUpon>StoreReportViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\StoreTransferFromOldSystemViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\StoreTransferFromOldSystemViewController.Designer.cs">
+      <DependentUpon>StoreTransferFromOldSystemViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\WastageReportViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\WastageReportViewController.Designer.cs">
+      <DependentUpon>WastageReportViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\WinShowCustomFormWindowController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\WinValueRangeViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Editors\SqlHelper.cs" />
+    <Compile Include="Editors\SqlProvider.cs" />
+    <Compile Include="Editors\UserViewVariants.cs" />
+    <Compile Include="Editors\WinCustomUserControlViewItem.cs" />
+    <Compile Include="Forms\ChangeOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChangeOrderForm.Designer.cs">
+      <DependentUpon>ChangeOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CuttingMachineGroupReportDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CuttingMachineGroupReportDetailForm.Designer.cs">
+      <DependentUpon>CuttingMachineGroupReportDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eco5TransferingMachineLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eco5TransferingMachineLoadForm.Designer.cs">
+      <DependentUpon>Eco5TransferingMachineLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eco5StretchMachineLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eco5StretchMachineLoadForm.Designer.cs">
+      <DependentUpon>Eco5StretchMachineLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eco5CPPMachineLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eco5CPPMachineLoadForm.Designer.cs">
+      <DependentUpon>Eco5CPPMachineLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eco5SlicingMachineLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eco5SlicingMachineLoadForm.Designer.cs">
+      <DependentUpon>Eco5SlicingMachineLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eco4SlicingMachineLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eco4SlicingMachineLoadForm.Designer.cs">
+      <DependentUpon>Eco4SlicingMachineLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eco4MachineLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eco4MachineLoadForm.Designer.cs">
+      <DependentUpon>Eco4MachineLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eco6CuttingMachineLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eco6CuttingMachineLoadForm.Designer.cs">
+      <DependentUpon>Eco6CuttingMachineLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eco6MachineLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eco6MachineLoadForm.Designer.cs">
+      <DependentUpon>Eco6MachineLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eco6LaminationMachineLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eco6LaminationMachineLoadForm.Designer.cs">
+      <DependentUpon>Eco6LaminationMachineLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eco1LaminationMachineLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eco1LaminationMachineLoadForm.Designer.cs">
+      <DependentUpon>Eco1LaminationMachineLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eco1MachineLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eco1MachineLoadForm.Designer.cs">
+      <DependentUpon>Eco1MachineLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eco5RegeneratedMachineLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eco5RegeneratedMachineLoadForm.Designer.cs">
+      <DependentUpon>Eco5RegeneratedMachineLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eco3MachineLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eco3MachineLoadForm.Designer.cs">
+      <DependentUpon>Eco3MachineLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eco2MachineLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eco2MachineLoadForm.Designer.cs">
+      <DependentUpon>Eco2MachineLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GenProdStatusReportDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GenProdStatusReportDetailForm.Designer.cs">
+      <DependentUpon>GenProdStatusReportDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NotifyShippedParametersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NotifyShippedParametersForm.Designer.cs">
+      <DependentUpon>NotifyShippedParametersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OldSystemDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OldSystemDetailForm.Designer.cs">
+      <DependentUpon>OldSystemDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductionStickerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductionStickerForm.Designer.cs">
+      <DependentUpon>ProductionStickerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QualityAnalysisImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QualityAnalysisImportForm.Designer.cs">
+      <DependentUpon>QualityAnalysisImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReadResourceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReadResourceForm.Designer.cs">
+      <DependentUpon>ReadResourceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StoreDetailReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StoreDetailReport.Designer.cs">
+      <DependentUpon>StoreDetailReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\TreeListOperationFindNodeByText.cs" />
+    <Compile Include="Forms\WaitingSalesOrderReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WaitingSalesOrderReport.Designer.cs">
+      <DependentUpon>WaitingSalesOrderReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WastageReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WastageReport.Designer.cs">
+      <DependentUpon>WastageReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WastageStickerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WastageStickerForm.Designer.cs">
+      <DependentUpon>WastageStickerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WasteStickerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WasteStickerForm.Designer.cs">
+      <DependentUpon>WasteStickerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\CuttingMachineGroupReportUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\CuttingMachineGroupReportUserControl.Designer.cs">
+      <DependentUpon>CuttingMachineGroupReportUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ErusluMovementReportUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ErusluMovementReportUserControl.Designer.cs">
+      <DependentUpon>ErusluMovementReportUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ErusluSalesOrderReportUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ErusluSalesOrderReportUserControl.Designer.cs">
+      <DependentUpon>ErusluSalesOrderReportUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ErusluStoreReportUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ErusluStoreReportUserControl.Designer.cs">
+      <DependentUpon>ErusluStoreReportUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\FindBarcodeUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\FindBarcodeUserControl.Designer.cs">
+      <DependentUpon>FindBarcodeUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\FindPaletteUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\FindPaletteUserControl.Designer.cs">
+      <DependentUpon>FindPaletteUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\GenProdStatusReportUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\GenProdStatusReportUserControl.Designer.cs">
+      <DependentUpon>GenProdStatusReportUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\MachineCapacityTargetReportUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\MachineCapacityTargetReportUserControl.Designer.cs">
+      <DependentUpon>MachineCapacityTargetReportUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\NotifyShippedUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\NotifyShippedUserControl.Designer.cs">
+      <DependentUpon>NotifyShippedUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ProductionReportUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ProductionReportUserControl.Designer.cs">
+      <DependentUpon>ProductionReportUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ProductionStickerUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ProductionStickerUserControl.Designer.cs">
+      <DependentUpon>ProductionStickerUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\RawMaterialReportUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\RawMaterialReportUserControl.Designer.cs">
+      <DependentUpon>RawMaterialReportUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\SalesOrderAnalysisUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\SalesOrderAnalysisUserControl.Designer.cs">
+      <DependentUpon>SalesOrderAnalysisUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\SalesOrderReportUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\SalesOrderReportUserControl.Designer.cs">
+      <DependentUpon>SalesOrderReportUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\SalesReturnReportUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\SalesReturnReportUserControl.Designer.cs">
+      <DependentUpon>SalesReturnReportUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ShippingAnalysisUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\ShippingAnalysisUserControl.Designer.cs">
+      <DependentUpon>ShippingAnalysisUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\StorePastReportUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\StorePastReportUserControl.Designer.cs">
+      <DependentUpon>StorePastReportUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\StoreReportUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\StoreReportUserControl.Designer.cs">
+      <DependentUpon>StoreReportUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\StoreTransferFromOldSystemUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\StoreTransferFromOldSystemUserControl.Designer.cs">
+      <DependentUpon>StoreTransferFromOldSystemUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\WastageReportUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserForms\WastageReportUserControl.Designer.cs">
+      <DependentUpon>WastageReportUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinModule.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WinModule.Designer.cs">
+      <DependentUpon>WinModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinModuleEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controllers\AnalysisCertificateViewController.resx">
+      <DependentUpon>AnalysisCertificateViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\CuttingMachineGroupReportViewController.resx">
+      <DependentUpon>CuttingMachineGroupReportViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\DailyProductionAnalysisWinViewController.resx">
+      <DependentUpon>DailyProductionAnalysisWinViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ErusluMovementReportWinViewController.resx">
+      <DependentUpon>ErusluMovementReportWinViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ErusluSalesOrderReportViewController.resx">
+      <DependentUpon>ErusluSalesOrderReportViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ErusluStoreReportWinViewController.resx">
+      <DependentUpon>ErusluStoreReportWinViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\GenProdStatusReportViewController.resx">
+      <DependentUpon>GenProdStatusReportViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\MachineCapacityTargetReportViewController.resx">
+      <DependentUpon>MachineCapacityTargetReportViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\NotifyShippedViewController.resx">
+      <DependentUpon>NotifyShippedViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ProductionReportViewController.resx">
+      <DependentUpon>ProductionReportViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\RawMaterialReportViewController.resx">
+      <DependentUpon>RawMaterialReportViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\SalesOrderAnalysisViewController.resx">
+      <DependentUpon>SalesOrderAnalysisViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\SalesOrderReportViewController.resx">
+      <DependentUpon>SalesOrderReportViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\DailyProductionAnalysisUserControl.resx">
+      <DependentUpon>DailyProductionAnalysisUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\SalesReturnMovementReportUserControl.resx">
+      <DependentUpon>SalesReturnMovementReportUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\SalesReturnMovementReportWinViewController.resx">
+      <DependentUpon>SalesReturnMovementReportWinViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\SalesReturnReportViewController.resx">
+      <DependentUpon>SalesReturnReportViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ShippingAnalysisViewController.resx">
+      <DependentUpon>ShippingAnalysisViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\StorePastReportWinViewController.resx">
+      <DependentUpon>StorePastReportWinViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\StoreReportViewController.resx">
+      <DependentUpon>StoreReportViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\StoreTransferFromOldSystemViewController.resx">
+      <DependentUpon>StoreTransferFromOldSystemViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\WastageReportViewController.resx">
+      <DependentUpon>WastageReportViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeOrderForm.resx">
+      <DependentUpon>ChangeOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CuttingMachineGroupReportDetailForm.resx">
+      <DependentUpon>CuttingMachineGroupReportDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eco5TransferingMachineLoadForm.resx">
+      <DependentUpon>Eco5TransferingMachineLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eco5StretchMachineLoadForm.resx">
+      <DependentUpon>Eco5StretchMachineLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eco5CPPMachineLoadForm.resx">
+      <DependentUpon>Eco5CPPMachineLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eco5SlicingMachineLoadForm.resx">
+      <DependentUpon>Eco5SlicingMachineLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eco4SlicingMachineLoadForm.resx">
+      <DependentUpon>Eco4SlicingMachineLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eco4MachineLoadForm.resx">
+      <DependentUpon>Eco4MachineLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eco6CuttingMachineLoadForm.resx">
+      <DependentUpon>Eco6CuttingMachineLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eco6MachineLoadForm.resx">
+      <DependentUpon>Eco6MachineLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eco6LaminationMachineLoadForm.resx">
+      <DependentUpon>Eco6LaminationMachineLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eco1LaminationMachineLoadForm.resx">
+      <DependentUpon>Eco1LaminationMachineLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eco1MachineLoadForm.resx">
+      <DependentUpon>Eco1MachineLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eco5RegeneratedMachineLoadForm.resx">
+      <DependentUpon>Eco5RegeneratedMachineLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eco3MachineLoadForm.resx">
+      <DependentUpon>Eco3MachineLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eco2MachineLoadForm.resx">
+      <DependentUpon>Eco2MachineLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GenProdStatusReportDetailForm.resx">
+      <DependentUpon>GenProdStatusReportDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NotifyShippedParametersForm.resx">
+      <DependentUpon>NotifyShippedParametersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OldSystemDetailForm.resx">
+      <DependentUpon>OldSystemDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductionStickerForm.resx">
+      <DependentUpon>ProductionStickerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QualityAnalysisImportForm.resx">
+      <DependentUpon>QualityAnalysisImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReadResourceForm.resx">
+      <DependentUpon>ReadResourceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StoreDetailReport.resx">
+      <DependentUpon>StoreDetailReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WaitingSalesOrderReport.resx">
+      <DependentUpon>WaitingSalesOrderReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WastageReport.resx">
+      <DependentUpon>WastageReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WastageStickerForm.resx">
+      <DependentUpon>WastageStickerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WasteStickerForm.resx">
+      <DependentUpon>WasteStickerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="UserForms\CuttingMachineGroupReportUserControl.resx">
+      <DependentUpon>CuttingMachineGroupReportUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ErusluMovementReportUserControl.resx">
+      <DependentUpon>ErusluMovementReportUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ErusluSalesOrderReportUserControl.resx">
+      <DependentUpon>ErusluSalesOrderReportUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ErusluStoreReportUserControl.resx">
+      <DependentUpon>ErusluStoreReportUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\FindBarcodeUserControl.resx">
+      <DependentUpon>FindBarcodeUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\FindPaletteUserControl.resx">
+      <DependentUpon>FindPaletteUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\GenProdStatusReportUserControl.resx">
+      <DependentUpon>GenProdStatusReportUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\MachineCapacityTargetReportUserControl.resx">
+      <DependentUpon>MachineCapacityTargetReportUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\NotifyShippedUserControl.resx">
+      <DependentUpon>NotifyShippedUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ProductionReportUserControl.resx">
+      <DependentUpon>ProductionReportUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ProductionStickerUserControl.resx">
+      <DependentUpon>ProductionStickerUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\RawMaterialReportUserControl.resx">
+      <DependentUpon>RawMaterialReportUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\SalesOrderAnalysisUserControl.resx">
+      <DependentUpon>SalesOrderAnalysisUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\SalesOrderReportUserControl.resx">
+      <DependentUpon>SalesOrderReportUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\SalesReturnReportUserControl.resx">
+      <DependentUpon>SalesReturnReportUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ShippingAnalysisUserControl.resx">
+      <DependentUpon>ShippingAnalysisUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\StorePastReportUserControl.resx">
+      <DependentUpon>StorePastReportUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\StoreReportUserControl.resx">
+      <DependentUpon>StoreReportUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\StoreTransferFromOldSystemUserControl.resx">
+      <DependentUpon>StoreTransferFromOldSystemUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\WastageReportUserControl.resx">
+      <DependentUpon>WastageReportUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinModule.resx">
+      <DependentUpon>WinModule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EcoplastERP.Module\EcoplastERP.Module.csproj">
+      <Project>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</Project>
+      <Name>EcoplastERP.Module</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Controllers\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Editors\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ReadMe.txt" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxFIOS2SAPProj1">
+      <Guid>{DBB02E0F-E229-4FC9-95E1-DE4BBF792168}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="FIOS2SAPProj1">
+      <Guid>{DBB02E0F-E229-4FC9-95E1-DE4BBF792168}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

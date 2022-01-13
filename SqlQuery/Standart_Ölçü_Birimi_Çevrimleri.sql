@@ -1,0 +1,1 @@
+select P.Code as [Stok Kodu], P.Name as [Stok Adý], cQuantity as [SÖB Miktar], CU.Code as [SÖB Birim], C.BaseQuantity as [TÖB Miktar], U.Code as [TÖB Birim] from ConversionUnit C inner join Product P on P.Oid = C.Product inner join Unit U on U.Oid = C.pUnit inner join Unit CU on CU.Oid = C.cUnit where C.GCRecord is null and P.ProductGroup = 'D1D21327-548A-4225-8270-0EB3F315C0AD'

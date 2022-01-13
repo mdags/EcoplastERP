@@ -1,0 +1,17 @@
+﻿<ion-view id="productionmain" view-title="Üretim ve Fire">
+    <ion-content padding="true">
+        <ion-list>
+            <label class="item item-input">
+                <span class="input-label">Başlangıç Tarihi</span>
+                <input type="date" id="exampleInput" name="input" ng-model="production.begindate"
+                       placeholder="yyyy-MM-dd" min="2013-01-01" max="2099-12-31" />
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Bitiş Tarihi</span>
+                <input type="date" id="exampleInput" name="input" ng-model="production.enddate"
+                       placeholder="yyyy-MM-dd" min="2013-01-01" max="2099-12-31" />
+            </label>
+            <button class="button button-block button-perfect" ng-click="go()">Rapor</button>
+        </ion-list>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,16 @@
+﻿<ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-perfect">
+        <h1 class="title">Detay</h1>
+        <button class="button button-clear button-primary" ng-click="modal.hide()">Kapat</button>
+    </ion-header-bar>
+    <ion-content padding="true">
+        <ion-refresher pulling-text="Yenilemek için bırak..." on-refresh="doRefreshDetail()"></ion-refresher>
+        <ion-list>
+            <ion-item collection-repeat="detail in detailList">
+                <h2>{{ detail.Shift }} - {{ detail.Operator }}</h2>
+                <p>Üretim: {{ detail.ProductionQuantity | number:2 }} KG</p>
+                <p>Fire: {{ detail.WastageQuantity | number:2 }} KG</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-modal-view>

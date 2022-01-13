@@ -1,0 +1,126 @@
+﻿<ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-perfect">
+        <h1 class="title">Detay</h1>
+        <button class="button button-clear button-primary" ng-click="modal.hide()">Kapat</button>
+    </ion-header-bar>
+    <ion-header-bar class="bar bar-subheader item-input-inset">
+        <label class="item item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="Müşteri Sipariş No" ng-model="modelSearch.ContactOrderNumber">
+        </label>
+    </ion-header-bar>
+    <ion-content padding="true" class="has-subheader">
+        <ion-refresher pulling-text="Yenilemek için bırak..." on-refresh="doRefreshDetail()"></ion-refresher>
+        <ion-list>
+            <ion-item class="item-divider">
+                <p>Toplam TÖB Miktar: {{ totalSalesOrdercQuantity | number:2 }} KG</p>
+            </ion-item>
+            <ion-item class="item-text-wrap" collection-repeat="detail in detailList | filter:modelSearch">
+                <p>Siparişi Veren:</p>
+                <h2>{{ detail.Contact }}</h2>
+                <p>Malı Teslim Alan:</p>
+                <h2>{{ detail.ShippingContact }}</h2>
+                <div class="row">
+                    <div class="col-40">Müş.Sip.No.:</div>
+                    <div class="col-60">{{ detail.ContactOrderNumber }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Müş.Sip.Tar.:</div>
+                    <div class="col-60">{{ detail.ContactOrderDate | dateFilter | date:'dd.MM.yyyy' }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Durumu:</div>
+                    <div class="col-60">{{ detail.SalesOrderStatus }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">İşin Adı:</div>
+                    <div class="col-60">{{ detail.WorkName }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Sip.No.:</div>
+                    <div class="col-60">{{ detail.OrderNumber }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Sip.Tar.:</div>
+                    <div class="col-60">{{ detail.OrderDate | dateFilter | date:'dd.MM.yyyy' }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Termin:</div>
+                    <div class="col-60">{{ detail.LineDeliveryDate | dateFilter | date:'dd.MM.yyyy' }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Sip.SÖB Mik.:</div>
+                    <div class="col-60">{{ detail.OrderedQuantity | number:2 }} {{ detail.Unit }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Sevk SÖB Mik.:</div>
+                    <div class="col-60">{{ detail.ShippedQuantity | number:2 }} {{ detail.Unit }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Depo SÖB Mik.:</div>
+                    <div class="col-60">{{ detail.StoreQuantity | number:2 }} {{ detail.Unit }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Sip.TÖB Mik.:</div>
+                    <div class="col-60">{{ detail.OrderedcQuantity | number:2 }} KG</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Sevk TÖB Mik.:</div>
+                    <div class="col-60">{{ detail.ShippedcQuantity | number:2 }} KG</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Depo TÖB Mik.:</div>
+                    <div class="col-60">{{ detail.StorecQuantity | number:2 }} KG</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">İş Durumu:</div>
+                    <div class="col-60">{{ detail.WorkStatus }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">İl:</div>
+                    <div class="col-60">{{ detail.City }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Petk.Fiyat:</div>
+                    <div class="col-60">{{ detail.PetkimPrice | number:2 }} $</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Gen.Gid.:</div>
+                    <div class="col-60">{{ detail.GeneralCost | number:2 }} $</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Ptk.Br.Fiyat:</div>
+                    <div class="col-60">{{ detail.PetkimUnitPrice | number:2 }} $</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Ptk.Zammı:</div>
+                    <div class="col-60">{{ detail.PetkimExtra }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Nakliye:</div>
+                    <div class="col-60">{{ detail.TransportType }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Vade:</div>
+                    <div class="col-60">{{ detail.PaymentMethod }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Baskı Depo:</div>
+                    <div class="col-60">{{ detail.PrintingStore | number:2 }} KG</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Kesim Depo:</div>
+                    <div class="col-60">{{ detail.CuttingStore | number:2 }} KG</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Dilme Depo:</div>
+                    <div class="col-60">{{ detail.SlicingStore | number:2 }} KG</div>
+                </div>
+                <div class="row">
+                    <div class="col-40">Lamine Depo:</div>
+                    <div class="col-60">{{ detail.LaminationStore | number:2 }} KG</div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-modal-view>

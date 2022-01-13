@@ -1,0 +1,3 @@
+select G.Name as [GroupName], C.Name as [StopName], M.Code as [MachineCode], S.BeginDate, S.Note from MachineStop S inner join Machine M on M.Oid = S.Machine inner join StopCode C on C.Oid = S.StopCode inner join StopGroupCode G on G.Oid = C.StopGroupCode where S.GCRecord is null and S.Active = 1 order by G.Name, C.Name, M.Code
+
+select G.Name as [GroupName], C.Name as [StopName], M.Code as [MachineCode], S.BeginDate, S.EndDate, datediff(minute, S.BeginDate, S.EndDate) as [StopTime], S.Note from MachineStop S inner join Machine M on M.Oid = S.Machine inner join StopCode C on C.Oid = S.StopCode inner join StopGroupCode G on G.Oid = C.StopGroupCode where S.GCRecord is null and S.Active = 0 and S.BeginDate between @beginDate and @endDate order by G.Name, C.Name, M.Code

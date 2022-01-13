@@ -1,0 +1,21 @@
+﻿<ion-view view-title="Ana Sayfa">
+    <ion-content padding="true">
+        <canvas tc-chartjs-bar chart-data="data" chart-options="options" height="300"></canvas>
+        <div class="row">
+            <div class="col col-50">
+                <canvas tc-chartjs-pie
+                        chart-data="myData"
+                        chart-options="myOptions"
+                        chart-plugins="myPlugins"
+                        chart-click="onChartClick(event)"></canvas>
+            </div>
+            <div class="col col-50">
+                <canvas tc-chartjs-pie
+                        chart-data="myData"
+                        chart-options="myOptions"
+                        chart-plugins="myPlugins"
+                        chart-click="onChartClick(event)"></canvas>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

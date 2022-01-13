@@ -1,0 +1,20 @@
+﻿<ion-view id="machineloadmain" view-title="Makine Yükleri">
+    <ion-header-bar class="bar bar-subheader item-input-inset">
+        <label class="item item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="Duruş Adı" ng-model="search.MachineCode">
+        </label>
+    </ion-header-bar>
+    <ion-content padding="true">
+        <ion-refresher pulling-text="Yenilemek için bırak..." on-refresh="doRefresh()"></ion-refresher>
+        <ion-list>
+            <ion-list ng-repeat="(key, value) in data | groupBy: 'StationCode'" ion-sticky>
+                <ion-item class="item-divider">{{ key }}</ion-item>
+                <ion-item class="item-icon-right" ng-repeat="item in value | filter:search" ng-click="go(item.MachineCode)">
+                    {{ item.MachineCode }}
+                    <i class="icon ion-ios-arrow-right"></i>
+                </ion-item>
+            </ion-list>
+        </ion-list>
+    </ion-content>
+</ion-view>

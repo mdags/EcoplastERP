@@ -1,0 +1,14 @@
+﻿<ion-view id="productionmachine" view-title="Makineler">
+    <ion-content padding="true">
+        <ion-refresher pulling-text="Yenilemek için bırak..." on-refresh="doRefresh()"></ion-refresher>
+        <div id="chart" dx-chart="chartOptions"></div>
+        <ion-list>
+            <ion-item class="item-icon-right" collection-repeat="item in data" ng-click="openModal(item)">
+                <h2><b>{{ item.MachineCode }}</b></h2>
+                <p>Üretim: {{ item.ProductionQuantity | number:2 }} KG</p>
+                <p>Fire: {{ item.WastageQuantity | number:2 }} KG</p>
+                <i class="icon ion-ios-arrow-up"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

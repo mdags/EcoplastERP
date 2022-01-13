@@ -1,0 +1,19 @@
+﻿<ion-view id="productkind" view-title="Ürün Cinsi">
+    <ion-header-bar class="bar bar-subheader item-input-inset">
+        <label class="item item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="Ara" ng-model="search.Name">
+        </label>
+    </ion-header-bar>
+    <ion-content padding="true">
+        <ion-refresher pulling-text="Yenilemek için bırak..." on-refresh="doRefresh()"></ion-refresher>
+        <div id="chart" dx-chart="chartOptions"></div>
+        <ion-list>
+            <ion-item class="item-icon-right" collection-repeat="item in data | filter:search" ng-click="openModal(item)">
+                <h2>{{ item.Name }}</h2>
+                <p>{{ item.cQuantity | number:2 }} KG</p>
+                <i class="icon ion-ios-arrow-up"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

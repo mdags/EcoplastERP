@@ -1,0 +1,29 @@
+﻿<ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-perfect">
+        <h1 class="title">Detay</h1>
+        <button class="button button-clear button-primary" ng-click="modal.hide()">Kapat</button>
+    </ion-header-bar>
+    <ion-header-bar class="bar bar-subheader item-input-inset">
+        <label class="item item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="Ara" ng-model="modelSearch.Name">
+        </label>
+    </ion-header-bar>
+    <ion-content padding="true">
+        <ion-refresher pulling-text="Yenilemek için bırak..." on-refresh="doRefreshDetail()"></ion-refresher>
+        <ion-list ng-repeat="(key, value) in detailList | groupBy: 'GroupName'" ion-sticky>
+            <ion-item class="item-divider">
+                {{ key }}
+                <!--<p>{{ numGroupsForTL(detailList, key) | number:2 }} ₺</p>
+                <p>{{ numGroupsForUSD(detailList, key) | number:2 }} $</p>
+                <p>{{ numGroupsForEUR(detailList, key) | number:2 }} €</p>-->
+            </ion-item>
+            <ion-item class="item-icon-right" ng-repeat="detail in value | filter:modelSearch">
+                <h2><b>{{ detail.Name }}</b></h2>
+                <p>{{ detail.TLTotal | number:2 }} ₺</p>
+                <p>{{ detail.USDTotal | number:2 }} $</p>
+                <p>{{ detail.EURTotal | number:2 }} €</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-modal-view>

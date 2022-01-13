@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="EcoplastERP.Module.BusinessObjects.ProductionObjects.CuttingWorkOrder">
+      <OwnMembers>
+        <Member Name="Bellows" DisplayFormat="0000,0+0000,0+0000,0" EditMask="0000,0+0000,0+0000,0" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="KPI" Visible="False" />
+    </Items>
+  </NavigationItems>
+  <Options FormStyle="Ribbon" Skin="Office 2013" UIType="TabbedMDI" MdiDefaultNewWindowTarget="MdiChild" RestoreTabbedMdiLayout="False" />
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="15.2.11.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="15.2.11.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerWindowsFormsModule" Version="15.2.11.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="15.2.11.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="15.2.11.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="Contact_ListView" ColumnAutoWidth="False" />
+    <ListView Id="Employee_ListView" ColumnAutoWidth="False" />
+    <ListView Id="Expedition_ListView" ColumnAutoWidth="False" />
+    <ListView Id="SalesOrder_ListView" ColumnAutoWidth="False" />
+    <ListView Id="SalesOrder_SalesOrderDetails_ListView" ColumnAutoWidth="False" />
+    <ListView Id="SalesOrderDetail_ListView" ColumnAutoWidth="False" />
+    <ListView Id="SalesOrderDetail_ListView_NotifyShipped" ShowColumnCustomization="False" ColumnAutoWidth="False" />
+    <ListView Id="SalesOrderDetail_ListView_PendingWorkOrders" ShowColumnCustomization="False" ColumnAutoWidth="True" />
+    <ListView Id="ShippingPlan_ListView" ColumnAutoWidth="False" />
+  </Views>
+</Application>

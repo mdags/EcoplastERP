@@ -1,0 +1,5 @@
+select Code, Name from Warehouse where GCRecord is null order by Code
+
+select W.Code, PT.Name as [ProductType], PK.Oid, PK.Name as [ProductKind], U.Code as [Unit], SUM(S.Quantity) as Quantity from Store S inner join Warehouse W on W.Oid = S.Warehouse inner join Product P on P.Oid = S.Product inner join Unit U on U.Oid = S.Unit inner join ProductType PT on PT.Oid = P.ProductType inner join ProductKind PK on PK.Oid = P.ProductKind where S.GCRecord is null and W.Code = '800' group by W.Code, PT.Name, PK.Oid, PK.Name, U.Code order by PT.Name, PK.Name
+
+select W.Code, P.Name as [ProductName], U.Code as [UnitCode], SUM(S.Quantity) as [Quantity] from Store S inner join Warehouse W on W.Oid = S.Warehouse inner join Product P on P.Oid = S.Product inner join Unit U on U.Oid = S.Unit where S.GCRecord is null and W.Code = '800' and P.ProductKind = '8D4D82D2-9093-4D4A-9B9F-3A44094657CE' group by W.Code, P.Name, U.Code order by P.Name

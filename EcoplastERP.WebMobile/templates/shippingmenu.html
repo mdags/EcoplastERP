@@ -1,0 +1,33 @@
+﻿<ion-view id="shippingmenu" view-title="Sevkiyat Yönetimi">
+    <ion-content padding="false" scroll="false">
+        <ion-list>
+            <label class="item item-input">
+                <span class="input-label">Başlangıç Tarihi</span>
+                <input type="date" id="exampleInput" name="input" ng-model="shipping.begindate"
+                       placeholder="yyyy-MM-dd" min="2013-01-01" max="2099-12-31" />
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Bitiş Tarihi</span>
+                <input type="date" id="exampleInput" name="input" ng-model="shipping.enddate"
+                       placeholder="yyyy-MM-dd" min="2013-01-01" max="2099-12-31" />
+            </label>
+        </ion-list>
+        <ion-list>
+            <ion-item class="item-divider">
+                <small>Rapor Tipi Seçiniz...</small>
+            </ion-item>
+            <a class="item item-icon-right" ng-click="go('shippingbyproduct')">
+                <h2>Ürün Cinsi Bazında</h2>
+                <i class="icon ion-ios-arrow-right"></i>
+            </a>
+            <a class="item item-icon-right" ng-click="go('shippingbycontact')">
+                <h2>Müşteri Bazında</h2>
+                <i class="icon ion-ios-arrow-right"></i>
+            </a>
+            <a class="item item-icon-right" ng-click="go('shippingbycity')">
+                <h2>İl Bazında</h2>
+                <i class="icon ion-ios-arrow-right"></i>
+            </a>
+        </ion-list>
+    </ion-content>
+</ion-view>

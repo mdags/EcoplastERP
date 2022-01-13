@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems>
+    <Items>
+      <Item Id="ProductManagement">
+        <Items>
+          <Item Id="Store_ListView">
+            <Items>
+              <Item Id="StoreTransferFromOldSystem" Visible="False" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+      <Item Id="ProductionManagement">
+        <Items>
+          <Item Id="FindBarcode" Visible="True" />
+          <Item Id="FindPalette" Visible="True" />
+        </Items>
+      </Item>
+      <Item Id="Reports">
+        <Items>
+          <Item Id="DynamicReports" Visible="True">
+            <Items>
+              <Item Id="SalerOrderAnalysis" Visible="False" />
+              <Item Id="SalesOrderReport" Visible="False" />
+              <Item Id="ProductionReport" Visible="False" />
+              <Item Id="Wastage Report" Visible="False" />
+              <Item Id="RawMaterialReport" Visible="False" />
+              <Item Id="CuttingMachineGroupReport" Visible="False" />
+              <Item Id="StoreReport" Visible="False" />
+              <Item Id="ShippingAnalysis" Visible="False" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="15.2.11.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerAspNetModule" Version="15.2.11.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="15.2.11.0" IsNewNode="True" />
+    <SchemaModule Name="SystemAspNetModule" Version="15.2.11.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="15.2.11.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="FilmingWorkOrder_ListView_MachineLoad" InlineEditMode="Batch" />
+    <DashboardView Id="FindBarcode_DashboardView">
+      <Items>
+        <ControlDetailItem Id="FindBarcode_ControlDetailItem" Removed="True" />
+        <CustomUserControlViewItemWeb Id="FindBarcode_CustomUserControlViewItemWeb" CustomControlPath="UserForms/FindBarcodeWebUserControl.ascx" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="FindBarcode_CustomUserControlViewItemWeb" ViewItem="FindBarcode_CustomUserControlViewItemWeb" Index="0" RelativeSize="100" ShowCaption="False" IsNewNode="True" />
+          <LayoutItem Id="FindBarcode_ControlDetailItem" Index="1" RelativeSize="96.29955947136564" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DashboardView Id="FindPalette_DashboardView">
+      <Items>
+        <ControlDetailItem Id="FindPalette_ControlDetailItem" Removed="True" />
+        <CustomUserControlViewItemWeb Id="FindPalette_CustomUserControlViewItemWeb" CustomControlPath="UserForms/FindPaletteWebUserControl.ascx" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Direction="Vertical">
+          <LayoutItem Id="FindPalette_CustomUserControlViewItemWeb" ViewItem="FindPalette_CustomUserControlViewItemWeb" Index="0" RelativeSize="100" ShowCaption="False" IsNewNode="True" />
+          <LayoutItem Id="FindPalette_ControlDetailItem" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DashboardView Id="GenProdStatusReport_DashboardView">
+      <Items>
+        <ControlDetailItem Id="GenProdStatusReport_ControlDetailItem" Removed="True" />
+        <CustomUserControlViewItemWeb Id="GenProdStatusReport_CustomUserControlViewItemWeb" CustomControlPath="UserForms/GenProdStatusReportWebUserControl.ascx" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Direction="Vertical">
+          <LayoutItem Id="GenProdStatusReport_CustomUserControlViewItemWeb" ViewItem="GenProdStatusReport_CustomUserControlViewItemWeb" Index="0" RelativeSize="100" ShowCaption="False" IsNewNode="True" />
+          <LayoutItem Id="GenProdStatusReport_ControlDetailItem" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+  </Views>
+</Application>

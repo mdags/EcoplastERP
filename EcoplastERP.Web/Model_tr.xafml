@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="BindAnalysisData" Caption="Analiz Verisi Bağla" />
+      <Action Id="ChooseTheme" Caption="Tema Seç" />
+      <Action Id="CloseView" Caption="Görünümü Kapat" />
+      <Action Id="Download" Caption="İndir" />
+      <Action Id="Edit" Caption="Düzenle" />
+      <Action Id="EditSeries" Caption="Serileri Düzenle" />
+      <Action Id="EditSeriesDetailView" Caption="Serileri Düzenle" />
+      <Action Id="Export" Caption="Dışarı Aktar" />
+      <Action Id="ExportAnalysis" Caption="Analiz İçin Dışarı Aktar" />
+      <Action Id="InlineEdit" Caption="Satırda Düzenle" />
+      <Action Id="NavigateTo" Caption="Gezin" />
+      <Action Id="OpenSeries" Caption="Serileri Aç" />
+      <Action Id="PrintChart" Caption="Grafiği Yazdır" />
+      <Action Id="PrintReportTo_Mht" Caption="Mht" />
+      <Action Id="PrintReportTo_Pdf" Caption="Pdf" />
+      <Action Id="PrintReportTo_Rtf" Caption="Rtf" />
+      <Action Id="PrintReportTo_Xls" Caption="Xls" />
+      <Action Id="QuickCreateAction" Caption="Hızlı Erişim" />
+      <Action Id="ReportWizard_Close" Caption="Kapat" />
+      <Action Id="ReportWizard_Create" Caption="Oluştur" />
+      <Action Id="ShowChartAction" Caption="Grafik Eylemi Göster" />
+      <Action Id="ShowNotificationsAction" Caption="Bildirimler Eylemini Göster" />
+      <Action Id="ShowReportDesignerV2" Caption="Rapor Tasarımcısı Göster" />
+      <Action Id="ShowReportInPreviewWindowV2" Caption="Önizleme" />
+      <Action Id="SwitchToEditMode" Caption="Düzenle" />
+      <Action Id="UnbindAnalysisData" Caption="Analiz Verisi Bağlantı Kaldır" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Web.Editors.UserControlDashboardOrganizationItem" Caption="Kullanıcı Kontrolü">
+      <OwnMembers>
+        <Member Name="ControlPath" Caption="Kontrol Dizini" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Web.ParameterlessLogonFailedInfo">
+      <OwnMembers>
+        <Member Name="Message" Caption="Mesaj" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="ASPxImagePropertyEditor">
+      <LocalizationItem Name="Clear" Value="Temizle" />
+      <LocalizationItem Name="Edit" Value="Düzenle" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="MyAccount" Value="Hesabım" />
+      <LocalizationItem Name="SelectAll" Value="(Tümünü Seç)" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Controls">
+      <LocalizationGroup Name="AnalysisControl">
+        <LocalizationItem Name="ChartTabCaption" Value="Grafik" />
+        <LocalizationItem Name="ChartTypeCaption" Value="Grafik türü" />
+        <LocalizationItem Name="ChartWizardText" Value="Girafik Sihirbazı" />
+        <LocalizationItem Name="PrintChartText" Value="Grafiği yazdır" />
+        <LocalizationItem Name="ShowColumnGrandTotalText" Value="Sütun Genel Toplam Göster" />
+        <LocalizationItem Name="ShowRowGrandTotalText" Value="Satır Genel Toplam Göster" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="ASPxCriteriaEdit">
+        <LocalizationItem Name="EnterValueText" Value="&lt;bir değer girin&gt;" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ASPxEditors">
+        <LocalizationItem Name="BinaryImage_Cancel" Value="Vazgeç" />
+        <LocalizationItem Name="BinaryImage_Clear" Value="Temizle" />
+        <LocalizationItem Name="BinaryImage_DropZone" Value="Resim dosyasını buraya bırakın" />
+        <LocalizationItem Name="BinaryImage_Empty" Value="Resion yok" />
+        <LocalizationItem Name="BinaryImage_InvalidData" Value="Geçersiz resim verisi" />
+        <LocalizationItem Name="BinaryImage_UploadFile" Value="Dosya Yükle..." />
+        <LocalizationItem Name="BinaryImage_Uploading" Value="Yükleniyor..." />
+        <LocalizationItem Name="Calendar_Cancel" Value="Vazgeç" />
+        <LocalizationItem Name="Calendar_Clear" Value="Temizle" />
+        <LocalizationItem Name="Calendar_OK" Value="OK" />
+        <LocalizationItem Name="Calendar_Today" Value="Bugün" />
+        <LocalizationItem Name="Captcha_DefaultErrorText" Value="Girilen kod geçersiz" />
+        <LocalizationItem Name="Captcha_DefaultImageAlternateText" Value="Captcha resmi" />
+        <LocalizationItem Name="Captcha_RefreshText" Value="Başka kod göster" />
+        <LocalizationItem Name="CheckBox_Checked" Value="Seçili" />
+        <LocalizationItem Name="CheckBox_Unchecked" Value="Seçili olmayan" />
+        <LocalizationItem Name="CheckBox_Undefined" Value="?" />
+        <LocalizationItem Name="ColorEdit_AutomaticColor" Value="Otomatik Renk" />
+        <LocalizationItem Name="ColorEdit_Cancel" Value="Vazgeç" />
+        <LocalizationItem Name="ColorEdit_CustomColor" Value="Özel Renk..." />
+        <LocalizationItem Name="ColorEdit_OK" Value="OK" />
+        <LocalizationItem Name="DefaultErrorText" Value="Geçersiz değer" />
+        <LocalizationItem Name="FilterControl_AddCondition" Value="Koşul Ekle" />
+        <LocalizationItem Name="FilterControl_AddConditionHint" Value="Bu gruba yeni koşul ekle" />
+        <LocalizationItem Name="FilterControl_AddGroup" Value="Grup Ekle" />
+        <LocalizationItem Name="FilterControl_AddValueHint" Value="Listeye yeni öğe ekle" />
+        <LocalizationItem Name="FilterControl_AggregateType" Value="Exists,Count,Max,Min,Avg,Sum" />
+        <LocalizationItem Name="FilterControl_BetweenAnd" Value="Ve" />
+        <LocalizationItem Name="FilterControl_Cancel" Value="Vazgeç" />
+        <LocalizationItem Name="FilterControl_ClearFilter" Value="Temizle" />
+        <LocalizationItem Name="FilterControl_DateTimeOperatorMenuCaption" Value="Tarih operatörleri" />
+        <LocalizationItem Name="FilterControl_Empty" Value="&amp;lt;empty&amp;gt;" />
+        <LocalizationItem Name="FilterControl_EmptyEnter" Value="&amp;lt;enter a value&amp;gt;" />
+        <LocalizationItem Name="FilterControl_GroupType" Value="And,Or,Not And,Not Or" />
+        <LocalizationItem Name="FilterControl_Not" Value="Not" />
+        <LocalizationItem Name="FilterControl_OK" Value="OK" />
+        <LocalizationItem Name="FilterControl_PopupHeaderText" Value="Filtre Oluşturucu" />
+        <LocalizationItem Name="FilterControl_Remove" Value="Kaldır" />
+        <LocalizationItem Name="FilterControl_RemoveConditionHint" Value="Bu koşulu kaldır" />
+        <LocalizationItem Name="FilterControl_ShowFilterControl" Value="Filtre Oluştur" />
+        <LocalizationItem Name="FilterControl_TextFilterTabCaption" Value="Metin" />
+        <LocalizationItem Name="FilterControl_VisualFilterTabCaption" Value="Görsel" />
+        <LocalizationItem Name="RequiredFieldErrorText" Value="*" />
+        <LocalizationItem Name="TokenBox_TokenRemoveButtonToolTip" Value="Kaldır" />
+        <LocalizationItem Name="TrackBar_Drag" Value="Sürükle" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ASPxGridView">
+        <LocalizationItem Name="Alt_DragAndDropHideColumnIcon" Value="Gizle" />
+        <LocalizationItem Name="AutoFilterBeginsWith" Value="İle başlar" />
+        <LocalizationItem Name="AutoFilterContains" Value="İçerir" />
+        <LocalizationItem Name="AutoFilterDoesNotContain" Value="İçermez" />
+        <LocalizationItem Name="AutoFilterEndsWith" Value="İle biter" />
+        <LocalizationItem Name="AutoFilterEquals" Value="Eşittir" />
+        <LocalizationItem Name="AutoFilterGreater" Value="Büyüktür" />
+        <LocalizationItem Name="AutoFilterGreaterOrEqual" Value="Büyük veya eşittir" />
+        <LocalizationItem Name="AutoFilterLess" Value="Küçüktür" />
+        <LocalizationItem Name="AutoFilterLessOrEqual" Value="Küçük veya eşittir" />
+        <LocalizationItem Name="AutoFilterLike" Value="Benzer ('%', '_')" />
+        <LocalizationItem Name="AutoFilterNotEqual" Value="Eşit değildir" />
+        <LocalizationItem Name="CommandApplyFilter" Value="Uygula" />
+        <LocalizationItem Name="CommandApplySearchPanelFilter" Value="Ara" />
+        <LocalizationItem Name="CommandCancel" Value="Vazgeç" />
+        <LocalizationItem Name="CommandClearFilter" Value="Temizle" />
+        <LocalizationItem Name="CommandClearSearchPanelFilter" Value="Temizle" />
+        <LocalizationItem Name="CommandDelete" Value="Sil" />
+        <LocalizationItem Name="CommandEdit" Value="Düzenle" />
+        <LocalizationItem Name="CommandHideAdaptiveDetail" Value="X" />
+        <LocalizationItem Name="CommandNew" Value="Yeni" />
+        <LocalizationItem Name="CommandShowAdaptiveDetail" Value="..." />
+        <LocalizationItem Name="CommandUpdate" Value="Yükle" />
+        <LocalizationItem Name="ConfirmDelete" Value="Silme Onayı?" />
+        <LocalizationItem Name="ContextMenu_ClearFilter" Value="Filtreyi Temizle" />
+        <LocalizationItem Name="ContextMenu_ClearGrouping" Value="Grubu Temizle" />
+        <LocalizationItem Name="ContextMenu_ClearSorting" Value="Sıralamayı Temizle" />
+        <LocalizationItem Name="ContextMenu_DeleteRow" Value="Sil" />
+        <LocalizationItem Name="ContextMenu_EditRow" Value="Düzenle" />
+        <LocalizationItem Name="ContextMenu_HideColumn" Value="Sütunu Gizle" />
+        <LocalizationItem Name="ContextMenu_NewRow" Value="Yeni" />
+        <LocalizationItem Name="ContextMenu_Refresh" Value="Yenile" />
+        <LocalizationItem Name="ContextMenu_ShowColumn" Value="Sütun Göster" />
+        <LocalizationItem Name="ContextMenu_ShowCustomizationWindow" Value="Sütün Seçimi" />
+        <LocalizationItem Name="ContextMenu_ShowFilterEditor" Value="Filtre Düzenleyici..." />
+        <LocalizationItem Name="ContextMenu_ShowGroupPanel" Value="Grup Paneli" />
+        <LocalizationItem Name="ContextMenu_ShowSearchPanel" Value="Arama Paneli" />
+        <LocalizationItem Name="ContextMenu_SortAscending" Value="Artan Sıralama" />
+        <LocalizationItem Name="ContextMenu_SortDescending" Value="Azalan Sıralama" />
+        <LocalizationItem Name="ContextMenu_SummaryAverage" Value="Average" />
+        <LocalizationItem Name="ContextMenu_SummaryCount" Value="Count" />
+        <LocalizationItem Name="ContextMenu_SummaryMax" Value="Max" />
+        <LocalizationItem Name="ContextMenu_SummaryMin" Value="Min" />
+        <LocalizationItem Name="ContextMenu_SummaryNone" Value="None" />
+        <LocalizationItem Name="ContextMenu_SummarySum" Value="Sum" />
+        <LocalizationItem Name="HeaderFilterCancelButton" Value="Vazgeç" />
+        <LocalizationItem Name="HeaderFilterOkButton" Value="OK" />
+        <LocalizationItem Name="HeaderFilterSelectAll" Value="(Tümünü Seç)" />
+        <LocalizationItem Name="HeaderFilterToday" Value="Bugün" />
+        <LocalizationItem Name="Outlook_Today" Value="Bugün" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ASPxperience">
+        <LocalizationItem Name="FileManager_Cancel" Value="Vazgeç" />
+        <LocalizationItem Name="FileManager_GridViewFilter_DateToday" Value="Bugün" />
+        <LocalizationItem Name="FileManager_Ok" Value="OK" />
+        <LocalizationItem Name="Pager_Next" Value="İler" />
+        <LocalizationItem Name="UploadControl_CancelButton" Value="Vazgeç" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ASPxScheduler">
+        <LocalizationItem Name="CaptionViewNavigator_Today" Value="Bugün" />
+        <LocalizationItem Name="Form_ButtonCancel" Value="Vazgeç" />
+        <LocalizationItem Name="Form_ButtonDelete" Value="Sil" />
+        <LocalizationItem Name="Form_ButtonOk" Value="OK" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraCharts">
+        <LocalizationItem Name="CloseValueMember" Value="Kapat" />
+        <LocalizationItem Name="DefaultMaxValue" Value="Max" />
+        <LocalizationItem Name="DefaultMinValue" Value="Min" />
+        <LocalizationItem Name="MenuItemClear" Value="Temizle" />
+        <LocalizationItem Name="MenuItemDelete" Value="Sil" />
+        <LocalizationItem Name="WizAggregateFunctionAverage" Value="Average" />
+        <LocalizationItem Name="WizAggregateFunctionCount" Value="Count" />
+        <LocalizationItem Name="WizAggregateFunctionNone" Value="None" />
+        <LocalizationItem Name="WizAggregateFunctionSum" Value="Sum" />
+        <LocalizationItem Name="WizAnchorPointChart" Value="Grafik" />
+        <LocalizationItem Name="WizAnnotationConnectorStyleNone" Value="None" />
+        <LocalizationItem Name="WizAxisLabelResolveOverlappingModeNone" Value="None" />
+        <LocalizationItem Name="WizChartPageName" Value="Grafik" />
+        <LocalizationItem Name="WizErrorMessageTitle" Value="Girafik Sihirbazı" />
+        <LocalizationItem Name="WizFormTitle" Value="Girafik Sihirbazı" />
+        <LocalizationItem Name="WizHatchMax" Value="Max" />
+        <LocalizationItem Name="WizHatchMin" Value="Min" />
+        <LocalizationItem Name="WizResolveOverlappingModeNone" Value="None" />
+        <LocalizationItem Name="WizValueLevelClose" Value="Kapat" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraReports">
+        <LocalizationItem Name="DocumentViewer_RibbonReportGroupText" Value="Rapor" />
+        <LocalizationItem Name="ReportDesigner_Wizard_DataSourceHeader" Value="Veri Tabanı Sihirbazı" />
+        <LocalizationItem Name="ReportDesigner_Wizard_Finish" Value="Bitir" />
+        <LocalizationItem Name="ReportDesigner_Wizard_Header" Value="Rapor Sihirbazı" />
+        <LocalizationItem Name="ReportDesigner_Wizard_Next" Value="Sonraki" />
+        <LocalizationItem Name="ReportDesigner_Wizard_Previous" Value="Önceki" />
+        <LocalizationItem Name="ReportDesigner_Wizard_Report_Style" Value="Rapor Stili Seçin" />
+        <LocalizationItem Name="ReportDesigner_Wizard_SummaryOptions_Average" Value="Average" />
+        <LocalizationItem Name="ReportDesigner_Wizard_SummaryOptions_Count" Value="Count" />
+        <LocalizationItem Name="ReportDesigner_Wizard_SummaryOptions_Max" Value="Max" />
+        <LocalizationItem Name="ReportDesigner_Wizard_SummaryOptions_Min" Value="Min" />
+        <LocalizationItem Name="ReportDesigner_Wizard_SummaryOptions_Sum" Value="Sum" />
+        <LocalizationItem Name="SearchDialog_Cancel" Value="Vazgeç" />
+        <LocalizationItem Name="WebDocumentViewer_SelectAll" Value="(Tümünü Seç)" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.XtraScheduler">
+        <LocalizationItem Name="Abbr_DaysShort" Value="d" />
+        <LocalizationItem Name="AppointmentLabel_None" Value="None" />
+        <LocalizationItem Name="Caption_GroupByNone" Value="None" />
+        <LocalizationItem Name="Caption_NextVisibleResources" Value="İler" />
+        <LocalizationItem Name="Caption_NoneReminder" Value="None" />
+        <LocalizationItem Name="TextWeekly_1Day" Value="{0}" />
+        <LocalizationItem Name="TextWeekly_2Day" Value="{0} and {1}" />
+        <LocalizationItem Name="TextWeekly_3Day" Value="{0}, {1}, and {2}" />
+        <LocalizationItem Name="TextWeekly_4Day" Value="{0}, {1}, {2}, and {3}" />
+        <LocalizationItem Name="TextWeekly_5Day" Value="{0}, {1}, {2}, {3}, and {4}" />
+        <LocalizationItem Name="TextWeekly_6Day" Value="{0}, {1}, {2}, {3}, {4}, and {5}" />
+        <LocalizationItem Name="TextWeekly_7Day" Value="{0}, {1}, {2}, {3}, {4}, {5}, and {6}" />
+        <LocalizationItem Name="TextWeeklyPatternString_EveryWeek" Value="every {3} {0}" />
+        <LocalizationItem Name="TextWeeklyPatternString_EveryWeeks" Value="every {1} {2} on {3} {0}" />
+        <LocalizationItem Name="TextYearlyPattern_YearsString1" Value="{3} {4} of every {1} {2} {0}" />
+        <LocalizationItem Name="TextYearlyPattern_YearsString2" Value="the {5} {6} of {3} every {1} {2} {0}" />
+        <LocalizationItem Name="TextYearlyPattern_YearString1" Value="every {3} {4} {0}" />
+        <LocalizationItem Name="TextYearlyPattern_YearString2" Value="the {5} {6} of {3} {0}" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="FileAttachments">
+      <LocalizationItem Name="Editor_Clear" Value="Temizle" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Namespaces">
+      <LocalizationItem Name="DevExpress.ExpressApp.Web" Value="Web" />
+      <LocalizationItem Name="DevExpress.ExpressApp.Web.Editors" Value="Editörler" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Texts">
+      <LocalizationItem Name="IgnoreWarning" Value="Uyarıları yoksay." />
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems RelatedAnalysisGroupCaption="Analiz">
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="MyDetails" Caption="Detaylarım" />
+        </Items>
+      </Item>
+      <Item Id="Reports" Caption="Raporlar" />
+    </Items>
+  </NavigationItems>
+  <ViewItems>
+    <PropertyEditor Name="PropertyEditors">
+      <RegisteredPropertyEditor PropertyType="System.DateTime" DefaultDisplayFormat="{0:d}" DefaultEditMask="d" />
+      <RegisteredPropertyEditor PropertyType="System.Decimal" DefaultDisplayFormat="{0:C}" DefaultEditMask="C" />
+      <RegisteredPropertyEditor PropertyType="System.Double" DefaultDisplayFormat="{0:#,###,##0.##############################}" DefaultEditMask="#,###,##0.##############################" />
+      <RegisteredPropertyEditor PropertyType="System.Int16" DefaultDisplayFormat="{0:N0}" DefaultEditMask="N0" />
+      <RegisteredPropertyEditor PropertyType="System.Int32" DefaultDisplayFormat="{0:N0}" DefaultEditMask="N0" />
+      <RegisteredPropertyEditor PropertyType="System.Int64" DefaultDisplayFormat="{0:N0}" DefaultEditMask="N0" />
+      <RegisteredPropertyEditor PropertyType="System.Single" DefaultDisplayFormat="{0:#,###,##0.##############################}" DefaultEditMask="#,###,##0.##############################" />
+      <RegisteredPropertyEditor PropertyType="System.TimeSpan" DefaultEditMask="([0-9]{1,5}\.)??(([0-9])|([0-1][0-9])|([2][0123])):[0-5][0-9]:[0-5][0-9](\.[0-9]{1,3})??" />
+      <RegisteredPropertyEditor PropertyType="System.UInt16" DefaultDisplayFormat="{0:N0}" DefaultEditMask="N0" />
+      <RegisteredPropertyEditor PropertyType="System.UInt32" DefaultDisplayFormat="{0:N0}" DefaultEditMask="N0" />
+      <RegisteredPropertyEditor PropertyType="System.UInt64" DefaultDisplayFormat="{0:N0}" DefaultEditMask="N0" />
+    </PropertyEditor>
+  </ViewItems>
+  <Views>
+    <DetailView Id="LogonAttemptsAmountedToLimit_DetailView" Caption="Oturum Aç" />
+    <DetailView Id="ParameterlessLogonFailedInfo_DefaultDetailView" Caption="Oturum Aç" />
+    <DetailView Id="ReportDesigner_DetailView" Caption="Rapor Tasarımcısı" />
+  </Views>
+</Application>

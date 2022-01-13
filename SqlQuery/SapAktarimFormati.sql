@@ -1,0 +1,1 @@
+select O.OrderNumber+'/'+cast(D.LineNumber as varchar(5)) as [Sipariþ No], D.SAPOrderNumber as [Sap No], D.SAPLineNumber as [Sap Kalem No], P.SAPCode as [Sap Malzeme No] from SalesOrderDetail D inner join SalesOrder O on O.Oid = D.SalesOrder inner join Product P on P.Oid = D.Product where D.GCRecord is null

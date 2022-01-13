@@ -1,0 +1,37 @@
+﻿<ion-view id="machinestopactive" view-title="Aktif Duruşlar">
+    <ion-header-bar class="bar bar-subheader item-input-inset">
+        <label class="item item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="Duruş Adı" ng-model="search.MachineCode">
+        </label>
+    </ion-header-bar>
+    <ion-content padding="true">
+        <ion-refresher pulling-text="Yenilemek için bırak..." on-refresh="doRefresh()"></ion-refresher>
+        <ion-list>
+            <label class="item item-input">
+                <span class="input-label">Başlangıç Tarihi</span>
+                <input type="date" id="exampleInput" name="input" ng-model="stop.begindate"
+                       placeholder="yyyy-MM-dd" min="2013-01-01" max="2099-12-31" />
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Bitiş Tarihi</span>
+                <input type="date" id="exampleInput" name="input" ng-model="stop.enddate"
+                       placeholder="yyyy-MM-dd" min="2013-01-01" max="2099-12-31" />
+            </label>
+            <button class="button button-block button-perfect" ng-click="report()">Rapor</button>
+        </ion-list>
+        <ion-list>
+            <ion-list ng-repeat="(key, value) in data | groupBy: 'GroupName'" ion-sticky>
+                <ion-item class="item-divider">{{ key }} - {{ numGroups(data, key) }}</ion-item>
+                <ion-item class="item-text-wrap" ng-repeat="item in value | filter:search">
+                    <h2>{{ item.MachineCode }}</h2>
+                    <p>{{ item.StopName }}</p>
+                    <p>Başlangıç: {{ item.BeginDate | dateFilter | date:'dd.MM.yyyy HH:mm' }}</p>
+                    <p>Bitiş: {{ item.EndDate | dateFilter | date:'dd.MM.yyyy HH:mm' }}</p>
+                    <p>Duruş Süresi (dk): {{ item.StopTime }}</p>
+                    <p>{{ item.Note }}</p>
+                </ion-item>
+            </ion-list>
+        </ion-list>
+    </ion-content>
+</ion-view>

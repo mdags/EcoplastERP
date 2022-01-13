@@ -1,0 +1,20 @@
+﻿<ion-view id="warehousebykind" view-title="Ürün Cinsi">
+    <ion-header-bar class="bar bar-subheader item-input-inset">
+        <label class="item item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="Ürün Cinsi" ng-model="search.ProductKind">
+        </label>
+    </ion-header-bar>
+    <ion-content padding="true">
+        <ion-refresher pulling-text="Yenilemek için bırak..." on-refresh="doRefresh()"></ion-refresher>
+        <ion-list>
+            <ion-list ng-repeat="(key, value) in data | groupBy: 'ProductType'" ion-sticky>
+                <ion-item class="item-divider">{{ key }}</ion-item>
+                <ion-item class="item-text-wrap" ng-repeat="item in value | filter:search" ng-click="openModal(item)">
+                    <h2>{{ item.ProductKind }}</h2>
+                    <p>{{ item.Quantity | number:2 }} {{ item.Unit }}</p>
+                </ion-item>
+            </ion-list>
+        </ion-list>
+    </ion-content>
+</ion-view>

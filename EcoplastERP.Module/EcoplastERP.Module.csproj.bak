@@ -1,0 +1,808 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EcoplastERP.Module</RootNamespace>
+    <AssemblyName>EcoplastERP.Module</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\EasyTest\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EASYTEST</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.ExpressApp.AuditTrail.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Chart.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.CloneObject.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Kpi.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Notifications.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Reports.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Security.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Validation.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Xpo.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v15.2.UI, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\HumanResourceObjects\BloodGroup.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\BusinessShare.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\Company.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\Department.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\DepartmentPart.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\Employee.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\EmployeeGroup.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\EmployeePortfolio.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\EmployeeStatus.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\EmployeeTask.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\FactoryShare.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\Graduation.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\GraduationClass.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\MaritalStatus.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\Qualification.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\ServiceRoute.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\ServiceStation.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\WorkClass.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\WorkDifficult.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\WorkPlace.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\WorkPosition.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\WorkShift.cs" />
+    <Compile Include="BusinessObjects\HumanResourceObjects\WorkType.cs" />
+    <Compile Include="BusinessObjects\MaintenanceObjects\Asset.cs" />
+    <Compile Include="BusinessObjects\MaintenanceObjects\AssetPortfolio.cs" />
+    <Compile Include="BusinessObjects\MaintenanceObjects\AssetType.cs" />
+    <Compile Include="BusinessObjects\MaintenanceObjects\MachineStop.cs" />
+    <Compile Include="BusinessObjects\MaintenanceObjects\MaintenanceDemand.cs" />
+    <Compile Include="BusinessObjects\MaintenanceObjects\MaintenancePeriod.cs" />
+    <Compile Include="BusinessObjects\MaintenanceObjects\MaintenanceTeam.cs" />
+    <Compile Include="BusinessObjects\MaintenanceObjects\MaintenanceType.cs" />
+    <Compile Include="BusinessObjects\MaintenanceObjects\MaintenanceWorkOrder.cs" />
+    <Compile Include="BusinessObjects\MaintenanceObjects\MaintenanceWorkOrderPortfolio.cs" />
+    <Compile Include="BusinessObjects\MaintenanceObjects\MaintenanceWorkOrderReciept.cs" />
+    <Compile Include="BusinessObjects\MaintenanceObjects\MalfunctionReason.cs" />
+    <Compile Include="BusinessObjects\MaintenanceObjects\PeriodicMaintenance.cs" />
+    <Compile Include="BusinessObjects\MaintenanceObjects\StopCode.cs" />
+    <Compile Include="BusinessObjects\MaintenanceObjects\StopGroupCode.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\Cargo.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\Contact.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\ContactGroup5.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\ContactGroup4.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\ContactGroup3.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\ContactGroup2.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\ContactGroup1.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\ContactPerson.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\ContactPortfolio.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\ContactType.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\DistributionChannel.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\Incoterms.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\PetkimPrice.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\SalesGroup.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\SalesOffice.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\SalesOrder.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\PaymentMethod.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\Salesman.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\SalesOrderDetail.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\SalesOrderDetailPortfolio.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\SalesOrganization.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\SalesReturn.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\SalesReturnDetail.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\SalesReturnReason.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\SalesWaybill.cs" />
+    <Compile Include="BusinessObjects\MarketingObjects\SalesWaybillDetail.cs" />
+    <Compile Include="BusinessObjects\ParametersObjects\ChangeProductionPaletteParameters.cs" />
+    <Compile Include="BusinessObjects\ParametersObjects\ChangeWorkOrderProductionOptionParameters.cs" />
+    <Compile Include="BusinessObjects\ParametersObjects\ChooseContactParameters.cs" />
+    <Compile Include="BusinessObjects\ParametersObjects\PlanningConfirmParameters.cs" />
+    <Compile Include="BusinessObjects\ParametersObjects\ShippingPlanNotifyParameters.cs" />
+    <Compile Include="BusinessObjects\ParametersObjects\TransferStoreParameters.cs" />
+    <Compile Include="BusinessObjects\PlateArchiveObjects\DijitalDataRequest.cs" />
+    <Compile Include="BusinessObjects\PlateArchiveObjects\Plate.cs" />
+    <Compile Include="BusinessObjects\PlateArchiveObjects\Printmaker.cs" />
+    <Compile Include="BusinessObjects\PlateArchiveObjects\RawMaterialType.cs" />
+    <Compile Include="BusinessObjects\PlateArchiveObjects\Reproduction.cs" />
+    <Compile Include="BusinessObjects\PlateArchiveObjects\ReproductionAccept.cs" />
+    <Compile Include="BusinessObjects\PlateArchiveObjects\ReproductionWorkStatus.cs" />
+    <Compile Include="BusinessObjects\PlateArchiveObjects\ReproductionWorkType.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\CapacityGroup.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\FilmingFilmType.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\FilmKind.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\Machine.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\MachineCapacityTarget.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\ProductionResource.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WastageKind.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\Waste.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WasteCode.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\BalloonCuttingWorkOrder.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\Eco6CuttingWorkOrder.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\Eco6CuttingWorkOrderReciept.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\Eco6LaminationWorkOrder.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\Eco6LaminationWorkOrderReciept.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\CastRegeneratedWorkOrder.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\CastRegeneratedWorkOrderReciept.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\CastSlicingWorkOrderReciept.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\BalloonFilmingWorkOrder.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\BalloonFilmingWorkOrderPart.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\BalloonFilmingWorkOrderReciept.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\CastFilmingWorkOrder.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\CastFilmingWorkOrderPart.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\CastFilmingWorkOrderReciept.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\CastSlicingWorkOrder.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\CastTransferingWorkOrder.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\CastTransferingWorkOrderReciept.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\CuttingWorkOrder.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\CuttingWorkOrderReciept.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\Eco6WorkOrder.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\Eco6WorkOrderReciept.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\FilmingWorkOrder.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\FilmingWorkOrderExtruder.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\FilmingWorkOrderPart.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\FilmingWorkOrderReciept.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\FoldingWorkOrder.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\LaminationWorkOrder.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\LaminationWorkOrderReciept.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\MachinePart.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\MachineGroup.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\PrintingWorkOrder.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\PrintingWorkOrderProcess.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\PrintingWorkOrderReciept.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\Production.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\ProductionPalette.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\ReadResource.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\ReadResourceMovement.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\Reciept.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\RecieptDetail.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\RegeneratedWorkOrder.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\RegeneratedWorkOrderReciept.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\Rezervation.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\RezervationDetail.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\ShiftAssignment.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\ShiftStart.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\SlicingWorkOrder.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WorkOrders\SlicingWorkOrderReciept.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\Station.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\Wastage.cs" />
+    <Compile Include="BusinessObjects\ProductionObjects\WastageReason.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\Additive.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\Bobbin.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\BobbinType.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\ConversionUnit.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\CriticalCode.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\CuttingMachineGroup.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\FilmingMachineGroup.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\FilmType.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\InnerPacking.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\MaterialColor.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\MaterialType.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\MinimumQuantity.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\Movement.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\MovementType.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\OuterPacking.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\Palette.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\PrintName.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\PrintRate.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\Product.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\ProductGroup.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\ProductGroup1.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\ProductGroup2.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\ProductionConsume.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\ProductionConsumeDetail.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\ProductionPackageType.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\ProductKind.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\ProductKindGroup.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\ProductPortfolio.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\ProductType.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\PunchType.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\ShippingFilmType.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\ShippingPackageType.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\Store.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\StorePast.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\Trademark.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\Unit.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\Warehouse.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\WarehouseCell.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\WarehouseGroupCode.cs" />
+    <Compile Include="BusinessObjects\ParametersObjects\AssignPurchaseParameters.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\WarehouseMovementPermission.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\WarehouseTransfer.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\WarehouseTransferDetail.cs" />
+    <Compile Include="BusinessObjects\ProductObjects\WarehouseTransferUser.cs" />
+    <Compile Include="BusinessObjects\PurchaseObjects\PurchaseOrderType.cs" />
+    <Compile Include="BusinessObjects\QualityObjects\AnalysisCertificate.cs" />
+    <Compile Include="BusinessObjects\QualityObjects\AnalysisCertificateDetail.cs" />
+    <Compile Include="BusinessObjects\QualityObjects\ConfirmedSupplier.cs" />
+    <Compile Include="BusinessObjects\PurchaseObjects\ContractedSupplier.cs" />
+    <Compile Include="BusinessObjects\PurchaseObjects\ContractedSupplierDetail.cs" />
+    <Compile Include="BusinessObjects\PurchaseObjects\DeliveryType.cs" />
+    <Compile Include="BusinessObjects\PurchaseObjects\Demand.cs" />
+    <Compile Include="BusinessObjects\PurchaseObjects\DemandDetail.cs" />
+    <Compile Include="BusinessObjects\PurchaseObjects\DemandDetailPortfolio.cs" />
+    <Compile Include="BusinessObjects\PurchaseObjects\DIIB.cs" />
+    <Compile Include="BusinessObjects\PurchaseObjects\ExpenseCenter.cs" />
+    <Compile Include="BusinessObjects\PurchaseObjects\ExpenseType.cs" />
+    <Compile Include="BusinessObjects\PurchaseObjects\Offer.cs" />
+    <Compile Include="BusinessObjects\PurchaseObjects\OfferDetail.cs" />
+    <Compile Include="BusinessObjects\PurchaseObjects\PurchaseOrder.cs" />
+    <Compile Include="BusinessObjects\PurchaseObjects\PurchaseOrderDetail.cs" />
+    <Compile Include="BusinessObjects\PurchaseObjects\Purchaser.cs" />
+    <Compile Include="BusinessObjects\PurchaseObjects\PurchaseWaybill.cs" />
+    <Compile Include="BusinessObjects\PurchaseObjects\PurchaseWaybillDetail.cs" />
+    <Compile Include="BusinessObjects\QualityObjects\ContactAnalysisCertificate.cs" />
+    <Compile Include="BusinessObjects\QualityObjects\ContactAnalysisCertificateDetail.cs" />
+    <Compile Include="BusinessObjects\QualityObjects\FilmingQualityTest.cs" />
+    <Compile Include="BusinessObjects\QualityObjects\FilmingQualityTestQuantitative.cs" />
+    <Compile Include="BusinessObjects\QualityObjects\FilmingQualityTestQualitative.cs" />
+    <Compile Include="BusinessObjects\QualityObjects\QualitativeAttributeDescription.cs" />
+    <Compile Include="BusinessObjects\QualityObjects\QualitativeAttributeValue.cs" />
+    <Compile Include="BusinessObjects\QualityObjects\QuantitativeAttribute.cs" />
+    <Compile Include="BusinessObjects\QualityObjects\SupplierClass.cs" />
+    <Compile Include="BusinessObjects\QualityObjects\SupplierEvaluation.cs" />
+    <Compile Include="BusinessObjects\QualityObjects\SupplierSupervision.cs" />
+    <Compile Include="BusinessObjects\ReportObjects\CuttingMachineGroupReport.cs" />
+    <Compile Include="BusinessObjects\ReportObjects\GeneralProductStatusReport.cs" />
+    <Compile Include="BusinessObjects\ShippingObjects\Delivery.cs" />
+    <Compile Include="BusinessObjects\ShippingObjects\DeliveryDetail.cs" />
+    <Compile Include="BusinessObjects\ShippingObjects\DeliveryDetailLoading.cs" />
+    <Compile Include="BusinessObjects\ShippingObjects\Expedition.cs" />
+    <Compile Include="BusinessObjects\ParametersObjects\ExpeditionParameters.cs" />
+    <Compile Include="BusinessObjects\ShippingObjects\ExpeditionDetail.cs" />
+    <Compile Include="BusinessObjects\ShippingObjects\ExpeditionPortfolio.cs" />
+    <Compile Include="BusinessObjects\ShippingObjects\FastShipping.cs" />
+    <Compile Include="BusinessObjects\ShippingObjects\Forwarding.cs" />
+    <Compile Include="BusinessObjects\ShippingObjects\Route.cs" />
+    <Compile Include="BusinessObjects\ShippingObjects\ShippingPlan.cs" />
+    <Compile Include="BusinessObjects\ShippingObjects\ShippingUser.cs" />
+    <Compile Include="BusinessObjects\ShippingObjects\Truck.cs" />
+    <Compile Include="BusinessObjects\ShippingObjects\TruckDriver.cs" />
+    <Compile Include="BusinessObjects\ShippingObjects\TruckPortfolio.cs" />
+    <Compile Include="BusinessObjects\SystemObjects\City.cs" />
+    <Compile Include="BusinessObjects\SystemObjects\Currency.cs" />
+    <Compile Include="BusinessObjects\SystemObjects\CurrencyType.cs" />
+    <Compile Include="BusinessObjects\SystemObjects\District.cs" />
+    <Compile Include="BusinessObjects\SystemObjects\ExchangeRate.cs" />
+    <Compile Include="BusinessObjects\SystemObjects\FilteringCriterion.cs" />
+    <Compile Include="BusinessObjects\SystemObjects\MobileUser.cs" />
+    <Compile Include="BusinessObjects\SystemObjects\SequenceSerie.cs" />
+    <Compile Include="Controllers\BalloonCuttingWorkOrderViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\BalloonCuttingWorkOrderViewController.Designer.cs">
+      <DependentUpon>BalloonCuttingWorkOrderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\BalloonFilmingWorkOrderViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\BalloonFilmingWorkOrderViewController.Designer.cs">
+      <DependentUpon>BalloonFilmingWorkOrderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CastFilmingWorkOrderViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\CastFilmingWorkOrderViewController.Designer.cs">
+      <DependentUpon>CastFilmingWorkOrderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CastRegeneratedViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\CastRegeneratedViewController.Designer.cs">
+      <DependentUpon>CastRegeneratedViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CastSlicingViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\CastSlicingViewController.Designer.cs">
+      <DependentUpon>CastSlicingViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CastTransferingWorkOrderViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\CastTransferingWorkOrderViewController.Designer.cs">
+      <DependentUpon>CastTransferingWorkOrderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ContactAnalysisCertificateViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ContactAnalysisCertificateViewController.Designer.cs">
+      <DependentUpon>ContactAnalysisCertificateViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CriteriaController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\CriteriaController.Designer.cs">
+      <DependentUpon>CriteriaController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CuttingWorkOrderViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\CuttingWorkOrderViewController.Designer.cs">
+      <DependentUpon>CuttingWorkOrderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DeliveryViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DeliveryViewController.Designer.cs">
+      <DependentUpon>DeliveryViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DemandViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DemandViewController.designer.cs">
+      <DependentUpon>DemandViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\Eco6CuttingWorkOrderViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\Eco6CuttingWorkOrderViewController.Designer.cs">
+      <DependentUpon>Eco6CuttingWorkOrderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\Eco6LaminationWorkOrderViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\Eco6LaminationWorkOrderViewController.Designer.cs">
+      <DependentUpon>Eco6LaminationWorkOrderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\Eco6WorkOrderViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\Eco6WorkOrderViewController.Designer.cs">
+      <DependentUpon>Eco6WorkOrderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ExpeditionViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ExpeditionViewController.Designer.cs">
+      <DependentUpon>ExpeditionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FastShippingViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\FastShippingViewController.Designer.cs">
+      <DependentUpon>FastShippingViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FilmingWorkOrderViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\FilmingWorkOrderViewController.Designer.cs">
+      <DependentUpon>FilmingWorkOrderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FoldingWorkOrderViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\FoldingWorkOrderViewController.Designer.cs">
+      <DependentUpon>FoldingWorkOrderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\HideItemWindowController .cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\HideItemWindowController .Designer.cs">
+      <DependentUpon>HideItemWindowController .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\LaminationWorkOrderViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\LaminationWorkOrderViewController.Designer.cs">
+      <DependentUpon>LaminationWorkOrderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\MaintenanceDemandViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\MaintenanceDemandViewController.Designer.cs">
+      <DependentUpon>MaintenanceDemandViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\MaintenanceWorkOrderViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\MaintenanceWorkOrderViewController.Designer.cs">
+      <DependentUpon>MaintenanceWorkOrderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\OfferViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\OfferViewController.designer.cs">
+      <DependentUpon>OfferViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\PetkimPriceViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\PetkimPriceViewController.Designer.cs">
+      <DependentUpon>PetkimPriceViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\PrintingWorkOrderViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\PrintingWorkOrderViewController.Designer.cs">
+      <DependentUpon>PrintingWorkOrderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ProductionViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ProductionViewController.Designer.cs">
+      <DependentUpon>ProductionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\PurchaseOrderViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\PurchaseOrderViewController.designer.cs">
+      <DependentUpon>PurchaseOrderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\PurchaseWaybillViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\PurchaseWaybillViewController.Designer.cs">
+      <DependentUpon>PurchaseWaybillViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\RegeneratedWorkOrderViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\RegeneratedWorkOrderViewController.Designer.cs">
+      <DependentUpon>RegeneratedWorkOrderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ReproductionViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ReproductionViewController.Designer.cs">
+      <DependentUpon>ReproductionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\RezervationViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\RezervationViewController.Designer.cs">
+      <DependentUpon>RezervationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\SalesOrderDetailListViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\SalesOrderDetailListViewController.Designer.cs">
+      <DependentUpon>SalesOrderDetailListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\SalesOrderListViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\SalesOrderListViewController.Designer.cs">
+      <DependentUpon>SalesOrderListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\SalesOrderViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\SalesOrderViewController.designer.cs">
+      <DependentUpon>SalesOrderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\SalesReturnViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\SalesReturnViewController.Designer.cs">
+      <DependentUpon>SalesReturnViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ShippingPlanViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ShippingPlanViewController.Designer.cs">
+      <DependentUpon>ShippingPlanViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ShowCustomFormWindowController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ShowDetailViewFromListViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ShowDetailViewFromListViewController.Designer.cs">
+      <DependentUpon>ShowDetailViewFromListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\SlicingWorkOrderViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\SlicingWorkOrderViewController.Designer.cs">
+      <DependentUpon>SlicingWorkOrderViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ValueRangeViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\WarehouseTransferViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\WarehouseTransferViewController.Designer.cs">
+      <DependentUpon>WarehouseTransferViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\WarehouseViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\WarehouseViewController.Designer.cs">
+      <DependentUpon>WarehouseViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editors\CustomUserControlViewItem.cs" />
+    <Compile Include="Editors\Enums.cs" />
+    <Compile Include="Editors\Helpers.cs" />
+    <Compile Include="Editors\SqlHelper.cs" />
+    <Compile Include="Module.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module.Designer.cs">
+      <DependentUpon>Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DatabaseUpdate\Updater.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controllers\BalloonCuttingWorkOrderViewController.resx">
+      <DependentUpon>BalloonCuttingWorkOrderViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\BalloonFilmingWorkOrderViewController.resx">
+      <DependentUpon>BalloonFilmingWorkOrderViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\CastFilmingWorkOrderViewController.resx">
+      <DependentUpon>CastFilmingWorkOrderViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\CastRegeneratedViewController.resx">
+      <DependentUpon>CastRegeneratedViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\CastSlicingViewController.resx">
+      <DependentUpon>CastSlicingViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\CastTransferingWorkOrderViewController.resx">
+      <DependentUpon>CastTransferingWorkOrderViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ContactAnalysisCertificateViewController.resx">
+      <DependentUpon>ContactAnalysisCertificateViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\CuttingWorkOrderViewController.resx">
+      <DependentUpon>CuttingWorkOrderViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\DeliveryViewController.resx">
+      <DependentUpon>DeliveryViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\DemandViewController.resx">
+      <DependentUpon>DemandViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\Eco6CuttingWorkOrderViewController.resx">
+      <DependentUpon>Eco6CuttingWorkOrderViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\Eco6LaminationWorkOrderViewController.resx">
+      <DependentUpon>Eco6LaminationWorkOrderViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\Eco6WorkOrderViewController.resx">
+      <DependentUpon>Eco6WorkOrderViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ExpeditionViewController.resx">
+      <DependentUpon>ExpeditionViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\FastShippingViewController.resx">
+      <DependentUpon>FastShippingViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\FilmingWorkOrderViewController.resx">
+      <DependentUpon>FilmingWorkOrderViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\FoldingWorkOrderViewController.resx">
+      <DependentUpon>FoldingWorkOrderViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\LaminationWorkOrderViewController.resx">
+      <DependentUpon>LaminationWorkOrderViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\MaintenanceDemandViewController.resx">
+      <DependentUpon>MaintenanceDemandViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\MaintenanceWorkOrderViewController.resx">
+      <DependentUpon>MaintenanceWorkOrderViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\OfferViewController.resx">
+      <DependentUpon>OfferViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\PetkimPriceViewController.resx">
+      <DependentUpon>PetkimPriceViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\PrintingWorkOrderViewController.resx">
+      <DependentUpon>PrintingWorkOrderViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ProductionViewController.resx">
+      <DependentUpon>ProductionViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\PurchaseOrderViewController.resx">
+      <DependentUpon>PurchaseOrderViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\PurchaseWaybillViewController.resx">
+      <DependentUpon>PurchaseWaybillViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\RegeneratedWorkOrderViewController.resx">
+      <DependentUpon>RegeneratedWorkOrderViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ReproductionViewController.resx">
+      <DependentUpon>ReproductionViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\RezervationViewController.resx">
+      <DependentUpon>RezervationViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\SalesOrderDetailListViewController.resx">
+      <DependentUpon>SalesOrderDetailListViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\SalesOrderListViewController.resx">
+      <DependentUpon>SalesOrderListViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\SalesOrderViewController.resx">
+      <DependentUpon>SalesOrderViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\SalesReturnViewController.resx">
+      <DependentUpon>SalesReturnViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ShippingPlanViewController.resx">
+      <DependentUpon>ShippingPlanViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\SlicingWorkOrderViewController.resx">
+      <DependentUpon>SlicingWorkOrderViewController.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\WarehouseTransferViewController.resx">
+      <DependentUpon>WarehouseTransferViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\WarehouseViewController.resx">
+      <DependentUpon>WarehouseViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+    <EmbeddedResource Include="Module.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Module.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="DatabaseUpdate\ReadMe.txt" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BusinessObjects\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Controllers\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FunctionalTests\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FunctionalTests\Sample.ets" />
+    <None Include="Images\ReadMe.txt" />
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.tr.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FunctionalTests\Config.xml" />
+    <EmbeddedResource Include="Images\PerfectLogo.png" />
+    <EmbeddedResource Include="Images\FotoselCift.png" />
+    <EmbeddedResource Include="Images\FotoselSag.png" />
+    <EmbeddedResource Include="Images\FotoselSol.png" />
+    <EmbeddedResource Include="Images\InFlatA.png" />
+    <EmbeddedResource Include="Images\InLeftA.png" />
+    <EmbeddedResource Include="Images\InReverseA.png" />
+    <EmbeddedResource Include="Images\InRightA.png" />
+    <EmbeddedResource Include="Images\OutFlatA.png" />
+    <EmbeddedResource Include="Images\OutLeftA.png" />
+    <EmbeddedResource Include="Images\OutReverseA.png" />
+    <EmbeddedResource Include="Images\OutRightA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\" />
+    <Folder Include="fonts\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

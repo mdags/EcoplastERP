@@ -1,0 +1,22 @@
+﻿<ion-view id="machineload" view-title="Makine Yükü">
+    <ion-header-bar class="bar bar-subheader item-input-inset">
+        <label class="item item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="İşin Adı" ng-model="search.WorkName">
+        </label>
+    </ion-header-bar>
+    <ion-content padding="true">
+        <ion-refresher pulling-text="Yenilemek için bırak..." on-refresh="doRefresh()"></ion-refresher>
+        <ion-list>
+            <ion-item class="item-icon-right item-text-wrap" collection-repeat="item in data | filter:search" ng-click="openModal(item)">
+                <div class="row"><b>US: %{{ item.US | number:0 }}</b><progress id="US" max="100" value="{{ item.US }}" style="width: 75%; margin-top: 3px;"></progress></div>
+                <div class="row"><b>SS: %{{ item.SS | number:0 }}</b><progress id="SS" max="100" value="{{ item.SS }}" style="width: 75%; margin-top: 3px;"></progress></div>
+                <h2><b>{{ item.SequenceNumber }} - {{  item.WorkName }}</b></h2>
+                <p>{{ item.ContactName }}</p>
+                <p>Sip.Mik.:{{ item.OrderedQuantity | number:2 }} KG</p>
+                <p>İş Emri Mik.:{{ item.WorkOrderQuantity | number:2 }} KG</p>
+                <i class="icon ion-ios-arrow-up"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
